@@ -1,0 +1,5023 @@
+{
+  "lastUpdated": 1791302445914,
+  "items": [
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Tarantula Ring",
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "SPIDER",
+          "amount": 75
+        }
+      ],
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "spider",
+          "level": 7
+        }
+      ],
+      "tier": "LEGENDARY",
+      "category": "ACCESSORY",
+      "id": "TARANTULA_RING"
+    },
+    {
+      "material": "COMPASS",
+      "name": "Archaeologist's Compass",
+      "tier": "COMMON",
+      "category": "ACCESSORY",
+      "npc_sell_price": 1000,
+      "soulbound": "SOLO",
+      "has_uuid": true,
+      "id": "ARCHAEOLOGIST_COMPASS"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Anita's Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "id": "ANITA_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Pesthunter Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "bonus_pest_chance": 40
+      },
+      "id": "PESTHUNTER_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Anita's Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "ANITA_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Anita's Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "ANITA_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Pesthunter Badge",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "bonus_pest_chance": 20
+      },
+      "id": "PESTHUNTER_BADGE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Pesthunter Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "stats": {
+        "bonus_pest_chance": 60
+      },
+      "id": "PESTHUNTER_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Sloth Hat of Celebration",
+      "category": "ACCESSORY",
+      "stats": {
+        "magic_find": 1
+      },
+      "museum": true,
+      "tier": "SPECIAL",
+      "id": "PARTY_HAT_SLOTH"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Crab Hat of Celebration - 2022 Edition",
+      "category": "ACCESSORY",
+      "stats": {
+        "magic_find": 1
+      },
+      "museum": true,
+      "tier": "SPECIAL",
+      "id": "PARTY_HAT_CRAB_ANIMATED"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Crab Hat of Celebration",
+      "category": "ACCESSORY",
+      "stats": {
+        "magic_find": 1
+      },
+      "museum": true,
+      "tier": "SPECIAL",
+      "id": "PARTY_HAT_CRAB"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Fish Affinity Talisman",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 1000,
+      "stats": {
+        "fishing_speed": 10
+      },
+      "id": "FISH_AFFINITY_TALISMAN"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/uncategorized/hotspot_artifact",
+      "name": "Hotspot Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "HOTSPOT_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Frozen Chicken",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "npc_sell_price": 1,
+      "stats": {
+        "WALK_SPEED": 1
+      },
+      "id": "FROZEN_CHICKEN"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/uncategorized/hotspot_ring",
+      "name": "Hotspot Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "HOTSPOT_RING"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/uncategorized/hotspot_talisman",
+      "name": "Hotspot Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "id": "HOTSPOT_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Student's Studies",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "soulbound": "SOLO",
+      "stats": {
+        "trophy_fish_chance": 2
+      },
+      "requirements": [
+        {
+          "type": "TROPHY_FISHING",
+          "trophy_type": "FROG",
+          "reward": "SILVER"
+        }
+      ],
+      "description": "%%dark_gray%%%%italic%%A hastily-written infodump explaining the key differences between various frog species. It uses the wrong citation style and is thus deemed worthless, regardless of the information contained within.",
+      "id": "STUDENT_STUDIES"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "PhD's Grimoire",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "stats": {
+        "trophy_fish_chance": 4
+      },
+      "requirements": [
+        {
+          "type": "TROPHY_FISHING",
+          "trophy_type": "FROG",
+          "reward": "DIAMOND"
+        }
+      ],
+      "description": "%%dark_gray%%%%italic%%A brilliant treatise documenting the physiognomy of various frog species, their impact on surrounding wildlife, and...tears in the fabric of reality beyond our conception? What?",
+      "id": "PHD_GRIMOIRE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Applicant's Statement",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "soulbound": "SOLO",
+      "stats": {
+        "trophy_fish_chance": 1
+      },
+      "requirements": [
+        {
+          "type": "TROPHY_FISHING",
+          "trophy_type": "FROG",
+          "reward": "BRONZE"
+        }
+      ],
+      "description": "%%dark_gray%%%%italic%%A single-page printout outlining why the candidate's application should be accepted. Why are these a thing? Just read the application itself...",
+      "id": "APPLICANT_STATEMENT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Master's Thesis",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "stats": {
+        "trophy_fish_chance": 3
+      },
+      "requirements": [
+        {
+          "type": "TROPHY_FISHING",
+          "trophy_type": "FROG",
+          "reward": "GOLD"
+        }
+      ],
+      "description": "%%dark_gray%%%%italic%%A well-written paper, complete with labeled diagrams. It explores frog biodiversity and details key efforts made in the name of conservation.",
+      "id": "MASTER_THESIS"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Fried Frozen Chicken",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "stats": {
+        "walk_speed": 1,
+        "heat_resistance": 1,
+        "cold_resistance": 1
+      },
+      "description": "%%dark_gray%%%%italic%%Fried Frozen?! There is no such thing!",
+      "id": "FRIED_FROZEN_CHICKEN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Junk Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "description": "%%dark_gray%%%%italic%%One man's trash is another man's treasure.",
+      "id": "JUNK_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Junk Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "description": "%%dark_gray%%%%italic%%One man's trash is another man's treasure.",
+      "id": "JUNK_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Junk Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "description": "%%dark_gray%%%%italic%%One man's trash is another man's treasure.",
+      "id": "JUNK_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Witch's Talisman",
+      "description": "%%dark_gray%%%%italic%%Stinks up your entire accessory bag - somebody clearly didn't wash their hands after making a stew.",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "stats": {
+        "alchemy_wisdom": 0.5
+      },
+      "id": "WITCH_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Witch's Ring",
+      "description": "%%dark_gray%%%%italic%%Stinks up your entire accessory bag - somebody clearly didn't wash their hands after making a stew.",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "alchemy_wisdom": 1
+      },
+      "id": "WITCH_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Witch's Artifact",
+      "description": "%%dark_gray%%%%italic%%Stinks up your entire accessory bag - somebody clearly didn't wash their hands after making a stew.",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "alchemy_wisdom": 1.5
+      },
+      "id": "WITCH_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Talisman of the Century",
+      "tier": "COMMON",
+      "category": "ACCESSORY",
+      "id": "CENTURY_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Runebook",
+      "category": "ACCESSORY",
+      "npc_sell_price": 10000,
+      "can_recombobulate": false,
+      "unstackable": true,
+      "id": "RUNEBOOK"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Artifact of the Century",
+      "tier": "RARE",
+      "category": "ACCESSORY",
+      "id": "CENTURY_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Ring of the Century",
+      "tier": "UNCOMMON",
+      "category": "ACCESSORY",
+      "id": "CENTURY_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Prestige Chocolate Realm",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "description": "%%dark_gray%%%%italic%%The Factory's pinnacle creation - its epic taste shatters expectations, offering a taste of utopia.",
+      "id": "PRESTIGE_CHOCOLATE_REALM"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Rich Chocolate Chunk",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "description": "%%dark_gray%%%%italic%%From the Factory's secret reserves, its rich flavor is a deep dive into indulgence.",
+      "id": "RICH_CHOCOLATE_CHUNK"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Nibble Chocolate Stick",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "description": "%%dark_gray%%%%italic%%A delightful treat from the Factory. Its crisp taste sparks joy with every bite.",
+      "id": "NIBBLE_CHOCOLATE_STICK"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Ganache Chocolate Slab",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "description": "%%dark_gray%%%%italic%%A Factory masterpiece - its divine taste transcends reality, offering a heavenly escape.",
+      "id": "GANACHE_CHOCOLATE_SLAB"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Smooth Chocolate Bar",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "description": "%%dark_gray%%%%italic%%Crafted in the Factory, its smoothness melts hearts and tastes like a sweet escape.",
+      "id": "SMOOTH_CHOCOLATE_BAR"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Great Spook Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "stats": {
+        "FEAR": 2
+      },
+      "npc_sell_price": 0,
+      "museum": true,
+      "id": "GREAT_SPOOK_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Great Spook Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "FEAR": 6
+      },
+      "npc_sell_price": 0,
+      "museum": true,
+      "id": "GREAT_SPOOK_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Great Spook Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "FEAR": 4
+      },
+      "npc_sell_price": 0,
+      "museum": true,
+      "id": "GREAT_SPOOK_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bits Talisman",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "unstackable": true,
+      "id": "BITS_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Abicase",
+      "tier": "RARE",
+      "category": "ACCESSORY",
+      "unstackable": true,
+      "id": "ABICASE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Mineral Talisman",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "MINING_FORTUNE": 3
+      },
+      "id": "MINERAL_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Glossy Mineral Talisman",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "stats": {
+        "MINING_FORTUNE": 6
+      },
+      "id": "GLOSSY_MINERAL_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Freshly Baked Heirloom",
+      "tier": "LEGENDARY",
+      "category": "ACCESSORY",
+      "id": "FRESHLY_BAKED_HEIRLOOM"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Gratitude Artifact",
+      "tier": "RARE",
+      "category": "ACCESSORY",
+      "id": "GRATITUDE_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Freshly Baked Artifact",
+      "tier": "RARE",
+      "category": "ACCESSORY",
+      "id": "FRESHLY_BAKED_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Freshly Baked Relic",
+      "tier": "EPIC",
+      "category": "ACCESSORY",
+      "id": "FRESHLY_BAKED_RELIC"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Gratitude Talisman",
+      "tier": "COMMON",
+      "category": "ACCESSORY",
+      "id": "GRATITUDE_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Freshly Baked Ring",
+      "tier": "UNCOMMON",
+      "category": "ACCESSORY",
+      "id": "FRESHLY_BAKED_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Gratitude Ring",
+      "tier": "UNCOMMON",
+      "category": "ACCESSORY",
+      "id": "GRATITUDE_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Freshly Baked Talisman",
+      "tier": "COMMON",
+      "category": "ACCESSORY",
+      "id": "FRESHLY_BAKED_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Scavenger Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 0,
+      "id": "SCAVENGER_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Scavenger Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 0,
+      "id": "SCAVENGER_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Anguish Ring",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "description": "%%dark_gray%%%%italic%%Why are we still here? Just to suffer?",
+      "stats": {
+        "MAGIC_FIND": 2,
+        "TRUE_DEFENSE": 1
+      },
+      "id": "ANGUISH_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Beastmaster Crest",
+      "category": "ACCESSORY",
+      "id": "BEASTMASTER_CREST_COMMON"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Beastmaster Crest",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "id": "BEASTMASTER_CREST_LEGENDARY"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Beastmaster Crest",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "id": "BEASTMASTER_CREST_EPIC"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Beastmaster Crest",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "BEASTMASTER_CREST_UNCOMMON"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Anguish Artifact",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "description": "%%dark_gray%%%%italic%%Why are we still here? Just to suffer?",
+      "stats": {
+        "MAGIC_FIND": 3,
+        "TRUE_DEFENSE": 1.5
+      },
+      "id": "ANGUISH_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Beastmaster Crest",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "BEASTMASTER_CREST_RARE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Anguish Talisman",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "description": "%%dark_gray%%%%italic%%Why are we still here? Just to suffer?",
+      "stats": {
+        "MAGIC_FIND": 1,
+        "TRUE_DEFENSE": 0.5
+      },
+      "id": "ANGUISH_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Pesthunter Relic",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "stats": {
+        "bonus_pest_chance": 80
+      },
+      "id": "PESTHUNTER_RELIC"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Blue Jerry Talisman",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "INTELLIGENCE": -2
+      },
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "JERRY_TALISMAN_BLUE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Green Jerry Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "INTELLIGENCE": -1
+      },
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "JERRY_TALISMAN_GREEN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Golden Jerry Artifact",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "stats": {
+        "INTELLIGENCE": -4
+      },
+      "id": "JERRY_TALISMAN_GOLDEN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Purple Jerry Talisman",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "stats": {
+        "INTELLIGENCE": -3
+      },
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "JERRY_TALISMAN_PURPLE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Hegemony Artifact",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "unstackable": true,
+      "id": "HEGEMONY_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Dull Shark Tooth Necklace",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "STRENGTH": 4
+      },
+      "id": "DULL_SHARK_TOOTH_NECKLACE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Raggedy Shark Tooth Necklace",
+      "category": "ACCESSORY",
+      "stats": {
+        "STRENGTH": 2
+      },
+      "id": "RAGGEDY_SHARK_TOOTH_NECKLACE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Honed Shark Tooth Necklace",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "STRENGTH": 6
+      },
+      "id": "HONED_SHARK_TOOTH_NECKLACE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Sharp Shark Tooth Necklace",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "stats": {
+        "STRENGTH": 8
+      },
+      "id": "SHARP_SHARK_TOOTH_NECKLACE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Razor-sharp Shark Tooth Necklace",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "stats": {
+        "STRENGTH": 10
+      },
+      "id": "RAZOR_SHARP_SHARK_TOOTH_NECKLACE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bingo Relic",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "museum": true,
+      "id": "BINGO_RELIC"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bingo Heirloom",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "museum": true,
+      "id": "BINGO_HEIRLOOM"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bingo Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "museum": true,
+      "id": "BINGO_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bingo Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "museum": true,
+      "id": "BINGO_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bingo Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "museum": true,
+      "id": "BINGO_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bucket of Dye",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "BUCKET_OF_DYE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Sea Creature Talisman",
+      "category": "ACCESSORY",
+      "stats": {
+        "sea_creature_chance": 0.1
+      },
+      "npc_sell_price": 180,
+      "id": "SEA_CREATURE_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Intimidation Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "INTIMIDATION_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "stats": {
+        "SEA_CREATURE_CHANCE": 0.5,
+        "trophy_fish_chance": 1
+      },
+      "name": "Odger's Bronze Tooth",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "soulbound": "SOLO",
+      "requirements": [
+        {
+          "type": "TROPHY_FISHING",
+          "trophy_type": "LAVA",
+          "reward": "BRONZE"
+        }
+      ],
+      "description": "%%dark_gray%%%%italic%%A perfectly fine tooth, besides some wear and tear...",
+      "id": "ODGERS_BRONZE_TOOTH"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Luck Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 3333,
+      "id": "LUCK_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Scarf's Thesis",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "npc_sell_price": 1000,
+      "dungeon_item": true,
+      "rift_transferrable": true,
+      "stats": {
+        "rift_Time": 11
+      },
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "WITHER",
+          "amount": 60
+        }
+      ],
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "description": "%%gray%%%%italic%%A research on how to preserve and enhance class abilities in death.",
+      "id": "SCARF_THESIS"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Artifact of Power",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "gemstone_slots": [
+        {
+          "slot_type": "JADE"
+        },
+        {
+          "slot_type": "AMBER"
+        },
+        {
+          "slot_type": "TOPAZ"
+        },
+        {
+          "slot_type": "SAPPHIRE"
+        },
+        {
+          "slot_type": "AMETHYST"
+        },
+        {
+          "slot_type": "JASPER"
+        },
+        {
+          "slot_type": "RUBY"
+        }
+      ],
+      "unstackable": true,
+      "can_auction": false,
+      "can_trade": false,
+      "id": "POWER_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bat Person Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "BAT_PERSON_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Wolf Paw",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "WALK_SPEED": 1
+      },
+      "soulbound": "SOLO",
+      "id": "WOLF_PAW"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Feather Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 32000,
+      "id": "FEATHER_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Night Vision Charm",
+      "category": "ACCESSORY",
+      "npc_sell_price": 2500,
+      "id": "NIGHT_VISION_CHARM"
+    },
+    {
+      "material": "DISPENSER",
+      "name": "Personal Deletor 4000",
+      "glowing": true,
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "unstackable": true,
+      "can_auction": false,
+      "can_trade": false,
+      "id": "PERSONAL_DELETOR_4000"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Talisman of Space",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "TALISMAN_OF_SPACE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Lava Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 5800,
+      "id": "LAVA_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Talisman of Coins",
+      "category": "ACCESSORY",
+      "npc_sell_price": 70,
+      "id": "COIN_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Master Skull - Tier 4",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "dungeon_item": true,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "MASTER_SKULL_TIER_4"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Intimidation Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "INTIMIDATION_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Healing Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 17000,
+      "stats": {
+        "vitality": 4
+      },
+      "id": "HEALING_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bat Artifact",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "stats": {
+        "WALK_SPEED": 3,
+        "HEALTH": 5,
+        "INTELLIGENCE": 3
+      },
+      "id": "BAT_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Emerald Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 7600,
+      "id": "EMERALD_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Seal Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "sea_creature_chance": 1,
+        "treasure_chance": 0.2
+      },
+      "npc_sell_price": 20000,
+      "id": "SEAL_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Artifact of Coins",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "ARTIFACT_OF_COINS"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "New Year Cake Bag",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "NEW_YEAR_CAKE_BAG"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Ring of Coins",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "RING_OF_COINS"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Fire Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 6480,
+      "id": "FIRE_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "stats": {
+        "SEA_CREATURE_CHANCE": 1.5,
+        "trophy_fish_chance": 3
+      },
+      "name": "Odger's Gold Tooth",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "requirements": [
+        {
+          "type": "TROPHY_FISHING",
+          "trophy_type": "LAVA",
+          "reward": "GOLD"
+        }
+      ],
+      "description": "%%dark_gray%%%%italic%%A perfectly fine tooth, besides its weight...",
+      "id": "ODGERS_GOLD_TOOTH"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Titanium Relic",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "stats": {
+        "MINING_SPEED": 60
+      },
+      "npc_sell_price": 10000,
+      "requirements": [
+        {
+          "type": "HEART_OF_THE_MOUNTAIN",
+          "tier": 5
+        }
+      ],
+      "id": "TITANIUM_RELIC"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Titanium Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "stats": {
+        "MINING_SPEED": 45
+      },
+      "npc_sell_price": 5000,
+      "requirements": [
+        {
+          "type": "HEART_OF_THE_MOUNTAIN",
+          "tier": 4
+        }
+      ],
+      "id": "TITANIUM_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Wood Affinity Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 160,
+      "id": "WOOD_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Cracked Piggy Bank",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 16000,
+      "id": "CRACKED_PIGGY_BANK"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Titanium Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "MINING_SPEED": 30
+      },
+      "npc_sell_price": 2000,
+      "requirements": [
+        {
+          "type": "HEART_OF_THE_MOUNTAIN",
+          "tier": 3
+        }
+      ],
+      "id": "TITANIUM_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Vaccine Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 100,
+      "id": "VACCINE_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Sea Creature Ring",
+      "category": "ACCESSORY",
+      "stats": {
+        "sea_creature_chance": 0.2
+      },
+      "tier": "UNCOMMON",
+      "npc_sell_price": 1000,
+      "id": "SEA_CREATURE_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Shady Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "soulbound": "SOLO",
+      "id": "SHADY_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Feather Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 160,
+      "id": "FEATHER_TALISMAN"
+    },
+    {
+      "material": "DROPPER",
+      "name": "Personal Compactor 6000",
+      "glowing": true,
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "unstackable": true,
+      "id": "PERSONAL_COMPACTOR_6000"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Titanium Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "MINING_SPEED": 15
+      },
+      "npc_sell_price": 51200,
+      "requirements": [
+        {
+          "type": "HEART_OF_THE_MOUNTAIN",
+          "tier": 2
+        }
+      ],
+      "id": "TITANIUM_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Haste Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 20500,
+      "stats": {
+        "MINING_SPEED": 10
+      },
+      "id": "HASTE_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Cheetah Talisman",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "stats": {
+        "WALK_SPEED": 3
+      },
+      "soulbound": "SOLO",
+      "npc_sell_price": 1000,
+      "can_auction": false,
+      "can_trade": false,
+      "id": "CHEETAH_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Farmer Orb",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "npc_sell_price": 480,
+      "id": "FARMER_ORB"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/uncategorized/beastslayers_codex_1",
+      "name": "Beastslayer's Codex",
+      "description": "%%dark_gray%%%%italic%%“Within these pages lie the memories of every creature you've conquered... and those still waiting to meet you.”",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "can_recombobulate": false,
+      "soulbound": "SOLO",
+      "id": "BEASTSLAYERS_CODEX"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Ring of Space",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "RING_OF_SPACE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "stats": {
+        "SEA_CREATURE_CHANCE": 2,
+        "trophy_fish_chance": 4
+      },
+      "name": "Odger's Diamond Tooth",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "requirements": [
+        {
+          "type": "TROPHY_FISHING",
+          "trophy_type": "LAVA",
+          "reward": "DIAMOND"
+        }
+      ],
+      "description": "%%dark_gray%%%%italic%%A perfectly fine tooth, besides its radiant brightness...",
+      "id": "ODGERS_DIAMOND_TOOTH"
+    },
+    {
+      "material": "DROPPER",
+      "name": "Personal Compactor 4000",
+      "glowing": true,
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "unstackable": true,
+      "id": "PERSONAL_COMPACTOR_4000"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Candy Relic",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "id": "CANDY_RELIC"
+    },
+    {
+      "material": "IRON_BARDING",
+      "name": "Lucky Hoof",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 50000,
+      "id": "LUCKY_HOOF"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Gravity Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 864,
+      "id": "GRAVITY_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bait Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 23000,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "BAIT_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Jacobus Register",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "HEALTH": 10,
+        "PET_LUCK": 1
+      },
+      "id": "JACOBUS_REGISTER"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Master Skull - Tier 1",
+      "category": "ACCESSORY",
+      "dungeon_item": true,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "MASTER_SKULL_TIER_1"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Master Skull - Tier 5",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "dungeon_item": true,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "MASTER_SKULL_TIER_5"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Potato Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "WALK_SPEED": 2
+      },
+      "museum": true,
+      "has_uuid": true,
+      "id": "POTATO_RING"
+    },
+    {
+      "material": "DISPENSER",
+      "name": "Personal Deletor 7000",
+      "glowing": true,
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "unstackable": true,
+      "can_auction": false,
+      "can_trade": false,
+      "id": "PERSONAL_DELETOR_7000"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Catacombs Expert Ring",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "dungeon_item": true,
+      "id": "CATACOMBS_EXPERT_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Scarf's Studies",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 1000,
+      "dungeon_item": true,
+      "rift_transferrable": true,
+      "stats": {
+        "rift_Time": 10
+      },
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "WITHER",
+          "amount": 15
+        }
+      ],
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "description": "%%gray%%%%italic%%The collection of his studies, beautiful handwriting!",
+      "id": "SCARF_STUDIES"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bat Person Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "BAT_PERSON_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Spiked Atrocity",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "id": "SPIKED_ATROCITY"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Pig's Foot",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "WALK_SPEED": 1
+      },
+      "soulbound": "SOLO",
+      "npc_sell_price": 1000,
+      "id": "PIGS_FOOT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Master Skull - Tier 10",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "dungeon_item": true,
+      "id": "MASTER_SKULL_TIER_10"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Speed Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 18000,
+      "stats": {
+        "WALK_SPEED": 3
+      },
+      "id": "SPEED_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Haste Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "stats": {
+        "MINING_SPEED": 25
+      },
+      "id": "HASTE_ARTIFACT"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/uncategorized/day_crystal",
+      "name": "Day Crystal",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 52000,
+      "id": "DAY_CRYSTAL"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "name": "Safety Badge",
+      "category": "ACCESSORY",
+      "durability": 3,
+      "stats": {
+        "DEFENSE": 3,
+        "INTELLIGENCE": 1
+      },
+      "tier": "COMMON",
+      "soulbound": "SOLO",
+      "can_auction": false,
+      "can_trade": false,
+      "can_recombobulate": false,
+      "id": "SAFETY_BADGE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Wither Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "npc_sell_price": 1000,
+      "id": "WITHER_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Seal of the Family",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "SEAL_OF_THE_FAMILY"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Speed Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 1400000,
+      "stats": {
+        "WALK_SPEED": 5
+      },
+      "id": "SPEED_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Wither Relic",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "npc_sell_price": 1000,
+      "dungeon_item": true,
+      "id": "WITHER_RELIC"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Auto Recombobulator",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "npc_sell_price": 1000,
+      "dungeon_item": true,
+      "id": "AUTO_RECOMBOBULATOR"
+    },
+    {
+      "material": "COMPASS",
+      "name": "Compass Talisman",
+      "glowing": true,
+      "category": "ACCESSORY",
+      "npc_sell_price": 85,
+      "id": "COMPASS_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Fiery Kuudra Core",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "npc_sell_price": 1,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "description": "%%gray%%%%italic%%A fragment of the core of Kuudra.",
+      "id": "FIERY_KUUDRA_CORE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Village Affinity Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 200,
+      "id": "VILLAGE_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Potion Affinity Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 64000,
+      "id": "ARTIFACT_POTION_AFFINITY"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Vaccine Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 500,
+      "id": "VACCINE_ARTIFACT"
+    },
+    {
+      "material": "DISPENSER",
+      "name": "Personal Deletor 6000",
+      "glowing": true,
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "unstackable": true,
+      "can_auction": false,
+      "can_trade": false,
+      "id": "PERSONAL_DELETOR_6000"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Master Skull - Tier 7",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "dungeon_item": true,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "MASTER_SKULL_TIER_7"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Mine Affinity Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 200,
+      "id": "MINE_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Treasure Ring",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "npc_sell_price": 1000,
+      "dungeon_item": true,
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "GOLD",
+          "amount": 120
+        }
+      ],
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "TREASURE_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Wolf Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 10000,
+      "id": "WOLF_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Dante's Talisman",
+      "category": "ACCESSORY",
+      "museum": true,
+      "id": "DANTE_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Burning Kuudra Core",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 1,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "description": "%%gray%%%%italic%%A remnant of the core of Kuudra!",
+      "id": "BURNING_KUUDRA_CORE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Master Skull - Tier 8",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "dungeon_item": true,
+      "id": "MASTER_SKULL_TIER_8"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Artifact of Space",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "id": "ARTIFACT_OF_SPACE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Dante's Ring",
+      "category": "ACCESSORY",
+      "museum": true,
+      "description": "Found in a hidden warehouse. Not very useful but still pretty nice to wear.",
+      "id": "DANTE_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Emerald Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 7600,
+      "id": "EMERALD_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Nether Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "npc_sell_price": 2000,
+      "id": "NETHER_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Piggy Bank",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 16000,
+      "id": "PIGGY_BANK"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Potato Talisman",
+      "category": "ACCESSORY",
+      "stats": {
+        "WALK_SPEED": 1
+      },
+      "npc_sell_price": 1000000,
+      "museum": true,
+      "has_uuid": true,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "POTATO_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Blood God Sigil",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "BLOOD_GOD_SIGIL"
+    },
+    {
+      "material": "DISPENSER",
+      "name": "Personal Deletor 5000",
+      "glowing": true,
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "unstackable": true,
+      "can_auction": false,
+      "can_trade": false,
+      "id": "PERSONAL_DELETOR_5000"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Kuudra Follower Relic",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "unstackable": true,
+      "soulbound": "SOLO",
+      "id": "KUUDRA_FOLLOWER_RELIC"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Speed Relic",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "npc_sell_price": 1400000,
+      "stats": {
+        "WALK_SPEED": 7,
+        "ATTACK_SPEED": 1,
+        "MINING_SPEED": 1,
+        "FISHING_SPEED": 1
+      },
+      "id": "SPEED_RELIC"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/uncategorized/night_crystal",
+      "name": "Night Crystal",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 52000,
+      "id": "NIGHT_CRYSTAL"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Shen's Regalia",
+      "unstackable": true,
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "id": "SHENS_REGALIA"
+    },
+    {
+      "material": "GOLD_BARDING",
+      "name": "Eternal Hoof",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "ETERNAL_HOOF"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Speed Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 110,
+      "stats": {
+        "WALK_SPEED": 1
+      },
+      "id": "SPEED_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Scavenger Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 200,
+      "id": "SCAVENGER_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Intimidation Relic",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "id": "INTIMIDATION_RELIC"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Healing Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 1440,
+      "stats": {
+        "vitality": 2
+      },
+      "id": "HEALING_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bat Talisman",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "WALK_SPEED": 1,
+        "HEALTH": 1,
+        "INTELLIGENCE": 1
+      },
+      "id": "BAT_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Magnetic Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 400,
+      "id": "MAGNETIC_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Grizzly Paw",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "WALK_SPEED": 1
+      },
+      "id": "GRIZZLY_PAW"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "stats": {
+        "SEA_CREATURE_CHANCE": 1,
+        "trophy_fish_chance": 2
+      },
+      "name": "Odger's Silver Tooth",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "soulbound": "SOLO",
+      "requirements": [
+        {
+          "type": "TROPHY_FISHING",
+          "trophy_type": "LAVA",
+          "reward": "SILVER"
+        }
+      ],
+      "description": "%%dark_gray%%%%italic%%A perfectly fine tooth, besides a broken chunk...",
+      "id": "ODGERS_SILVER_TOOTH"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Potion Affinity Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 192,
+      "id": "POTION_AFFINITY_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Wolf Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 100,
+      "id": "WOLF_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Master Skull - Tier 2",
+      "category": "ACCESSORY",
+      "dungeon_item": true,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "MASTER_SKULL_TIER_2"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Relic of Coins",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "id": "RELIC_OF_COINS"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Intimidation Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 200,
+      "id": "INTIMIDATION_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Pandora's Box",
+      "unstackable": true,
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "has_uuid": true,
+      "can_recombobulate": false,
+      "id": "PANDORAS_BOX"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Scarf's Grimoire",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "npc_sell_price": 1000,
+      "dungeon_item": true,
+      "rift_transferrable": true,
+      "stats": {
+        "rift_Time": 12
+      },
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "WITHER",
+          "amount": 240
+        }
+      ],
+      "description": "%%gray%%%%italic%%Dark and powerful spells, includes his favorite \"Barrier\" that his Professor taught him.",
+      "id": "SCARF_GRIMOIRE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Lynx Talisman",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "WALK_SPEED": 2
+      },
+      "soulbound": "SOLO",
+      "npc_sell_price": 1000,
+      "can_auction": false,
+      "can_trade": false,
+      "id": "LYNX_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bat Person Talisman",
+      "category": "ACCESSORY",
+      "id": "BAT_PERSON_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Candy Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "id": "CANDY_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Treasure Talisman",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 10000,
+      "dungeon_item": true,
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "GOLD",
+          "amount": 15
+        }
+      ],
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "TREASURE_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Artifact of Control",
+      "unstackable": true,
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "id": "ARTIFACT_OF_CONTROL"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Carnival Mask Bag",
+      "tier": "COMMON",
+      "category": "ACCESSORY",
+      "double_tap_to_drop": true,
+      "id": "CARNIVAL_MASK_BAG"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Broken Piggy Bank",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 16000,
+      "id": "BROKEN_PIGGY_BANK"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Candy Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "CANDY_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Crooked Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "id": "CROOKED_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "King Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 2000,
+      "soulbound": "SOLO",
+      "id": "KING_TALISMAN"
+    },
+    {
+      "material": "DROPPER",
+      "name": "Personal Compactor 7000",
+      "glowing": true,
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "unstackable": true,
+      "id": "PERSONAL_COMPACTOR_7000"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Feather Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 1800,
+      "id": "FEATHER_RING"
+    },
+    {
+      "material": "DROPPER",
+      "name": "Personal Compactor 5000",
+      "glowing": true,
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "unstackable": true,
+      "id": "PERSONAL_COMPACTOR_5000"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Master Skull - Tier 3",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "dungeon_item": true,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "MASTER_SKULL_TIER_3"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Spider Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 50,
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "SPIDER",
+          "amount": 10
+        }
+      ],
+      "rarity_salvageable": true,
+      "id": "SPIDER_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bat Ring",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "stats": {
+        "WALK_SPEED": 2,
+        "HEALTH": 3,
+        "INTELLIGENCE": 2
+      },
+      "id": "BAT_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Vaccine Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 22,
+      "id": "VACCINE_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Farming Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 25,
+      "tier": "UNCOMMON",
+      "stats": {
+        "FARMING_FORTUNE": 3
+      },
+      "id": "FARMING_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "name": "Skeleton Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 50,
+      "id": "SKELETON_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Master Skull - Tier 6",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "dungeon_item": true,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "MASTER_SKULL_TIER_6"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Sea Creature Artifact",
+      "category": "ACCESSORY",
+      "stats": {
+        "sea_creature_chance": 0.3
+      },
+      "tier": "RARE",
+      "npc_sell_price": 25000,
+      "id": "SEA_CREATURE_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Master Skull - Tier 9",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "dungeon_item": true,
+      "id": "MASTER_SKULL_TIER_9"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Potion Affinity Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 2100,
+      "id": "RING_POTION_AFFINITY"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Infernal Kuudra Core",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "npc_sell_price": 1,
+      "description": "%%gray%%%%italic%%The dark core of Kuudra!",
+      "id": "INFERNAL_KUUDRA_CORE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Jungle Amulet",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "GEMSTONE_FORTUNE": 10
+      },
+      "id": "JUNGLE_AMULET"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Cat Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "WALK_SPEED": 1
+      },
+      "soulbound": "SOLO",
+      "npc_sell_price": 1000,
+      "can_auction": false,
+      "can_trade": false,
+      "id": "CAT_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Talisman of Power",
+      "category": "ACCESSORY",
+      "gemstone_slots": [
+        {
+          "slot_type": "RUBY"
+        },
+        {
+          "slot_type": "AMBER"
+        }
+      ],
+      "unstackable": true,
+      "can_auction": false,
+      "can_trade": false,
+      "id": "POWER_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Ring of Power",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "gemstone_slots": [
+        {
+          "slot_type": "RUBY"
+        },
+        {
+          "slot_type": "AMETHYST"
+        },
+        {
+          "slot_type": "JADE"
+        },
+        {
+          "slot_type": "AMBER"
+        }
+      ],
+      "unstackable": true,
+      "can_auction": false,
+      "can_trade": false,
+      "id": "POWER_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 2,
+      "name": "Zombie Talisman",
+      "category": "ACCESSORY",
+      "npc_sell_price": 50,
+      "id": "ZOMBIE_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Seal Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "sea_creature_chance": 0.5,
+        "treasure_chance": 0.1
+      },
+      "npc_sell_price": 10000,
+      "id": "SEAL_TALISMAN"
+    },
+    {
+      "material": "LEATHER_BOOTS",
+      "name": "Old Boot",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "OLD_BOOT"
+    },
+    {
+      "material": "ENCHANTED_BOOK",
+      "name": "Experience Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "npc_sell_price": 115000,
+      "id": "EXPERIENCE_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Candy Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "CANDY_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Blood God Crest",
+      "category": "ACCESSORY",
+      "npc_sell_price": 500000,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "BLOOD_GOD_CREST"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Treasure Artifact",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "npc_sell_price": 1000,
+      "dungeon_item": true,
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "GOLD",
+          "amount": 1080
+        }
+      ],
+      "id": "TREASURE_ARTIFACT"
+    },
+    {
+      "material": "BOOK",
+      "name": "Book of Progression",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "can_recombobulate": false,
+      "id": "BOOK_OF_PROGRESSION"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Blaze Talisman",
+      "tier": "RARE",
+      "unstackable": true,
+      "category": "ACCESSORY",
+      "stats": {
+        "TRUE_DEFENSE": 3
+      },
+      "id": "BLAZE_TALISMAN"
+    },
+    {
+      "name": "Burststopper Artifact",
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "stats": {
+        "TRUE_DEFENSE": 3,
+        "STRENGTH": 2
+      },
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "blaze",
+          "level": 7
+        }
+      ],
+      "id": "BURSTSTOPPER_ARTIFACT"
+    },
+    {
+      "name": "Burststopper Talisman",
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "TRUE_DEFENSE": 2,
+        "STRENGTH": 1
+      },
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "blaze",
+          "level": 3
+        }
+      ],
+      "id": "BURSTSTOPPER_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soulflow Supercell",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "enderman",
+          "level": 7
+        }
+      ],
+      "id": "SOULFLOW_SUPERCELL"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Ender Relic",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "enderman",
+          "level": 7
+        }
+      ],
+      "id": "ENDER_RELIC"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Handy Blood Chalice",
+      "category": "ACCESSORY",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "enderman",
+          "level": 5
+        }
+      ],
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "DRAGON",
+          "amount": 15
+        }
+      ],
+      "id": "HANDY_BLOOD_CHALICE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Pocket Espresso Machine",
+      "category": "ACCESSORY",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "enderman",
+          "level": 4
+        }
+      ],
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "DRAGON",
+          "amount": 15
+        }
+      ],
+      "id": "POCKET_ESPRESSO_MACHINE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soulflow Pile",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 160,
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "enderman",
+          "level": 2
+        }
+      ],
+      "id": "SOULFLOW_PILE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soulflow Battery",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "enderman",
+          "level": 5
+        }
+      ],
+      "id": "SOULFLOW_BATTERY"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Tarantula Talisman",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "spider",
+          "level": 6
+        }
+      ],
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "SPIDER",
+          "amount": 50
+        }
+      ],
+      "id": "TARANTULA_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Survivor Cube",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "stats": {
+        "vitality": 3
+      },
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "spider",
+          "level": 7
+        }
+      ],
+      "id": "SURVIVOR_CUBE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Spider Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "spider",
+          "level": 6
+        }
+      ],
+      "id": "SPIDER_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Spider Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "spider",
+          "level": 1
+        }
+      ],
+      "id": "SPIDER_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Reaper Orb",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "zombie",
+          "level": 8
+        }
+      ],
+      "id": "REAPER_ORB"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Zombie Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "zombie",
+          "level": 2
+        }
+      ],
+      "id": "ZOMBIE_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Zombie Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "zombie",
+          "level": 7
+        }
+      ],
+      "id": "ZOMBIE_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Devour Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "zombie",
+          "level": 5
+        }
+      ],
+      "id": "DEVOUR_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Hunter Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "wolf",
+          "level": 7
+        }
+      ],
+      "stats": {
+        "combat_wisdom": 2
+      },
+      "id": "HUNTER_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Hunter Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "wolf",
+          "level": 7
+        }
+      ],
+      "stats": {
+        "combat_wisdom": 5
+      },
+      "id": "HUNTER_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Red Claw Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "CRITICAL_DAMAGE": 3
+      },
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "wolf",
+          "level": 5
+        }
+      ],
+      "id": "RED_CLAW_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Red Claw Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "stats": {
+        "CRITICAL_DAMAGE": 5
+      },
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "wolf",
+          "level": 5
+        }
+      ],
+      "id": "RED_CLAW_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Red Claw Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "CRITICAL_DAMAGE": 1
+      },
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "wolf",
+          "level": 1
+        }
+      ],
+      "id": "RED_CLAW_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Dwarven Metal Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "requirements": [
+        {
+          "type": "HEART_OF_THE_MOUNTAIN",
+          "tier": 8
+        }
+      ],
+      "stats": {
+        "DWARVEN_METAL_FORTUNE": 15
+      },
+      "id": "DWARVEN_METAL"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Relic of Power",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "gemstone_slots": [
+        {
+          "slot_type": "JADE"
+        },
+        {
+          "slot_type": "AMBER"
+        },
+        {
+          "slot_type": "TOPAZ"
+        },
+        {
+          "slot_type": "SAPPHIRE"
+        },
+        {
+          "slot_type": "AMETHYST"
+        },
+        {
+          "slot_type": "JASPER"
+        },
+        {
+          "slot_type": "RUBY"
+        },
+        {
+          "slot_type": "OPAL"
+        },
+        {
+          "slot_type": "ONYX"
+        },
+        {
+          "slot_type": "PERIDOT"
+        },
+        {
+          "slot_type": "CITRINE"
+        },
+        {
+          "slot_type": "AQUAMARINE"
+        }
+      ],
+      "requirements": [
+        {
+          "type": "HEART_OF_THE_MOUNTAIN",
+          "tier": 10
+        }
+      ],
+      "unstackable": true,
+      "can_auction": false,
+      "can_trade": false,
+      "id": "POWER_RELIC"
+    },
+    {
+      "material": "NETHER_STAR",
+      "name": "Eternal Crystal",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "npc_sell_price": 105000,
+      "id": "ETERNAL_CRYSTAL"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Squash Ring",
+      "tier": "UNCOMMON",
+      "category": "ACCESSORY",
+      "stats": {
+        "wheat_fortune": 20,
+        "carrot_fortune": 20,
+        "potato_fortune": 20,
+        "melon_fortune": 20,
+        "pumpkin_fortune": 20,
+        "cocoa_beans_fortune": 20
+      },
+      "id": "SQUASH_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Cropie Talisman",
+      "tier": "COMMON",
+      "category": "ACCESSORY",
+      "stats": {
+        "wheat_fortune": 10,
+        "carrot_fortune": 10,
+        "potato_fortune": 10
+      },
+      "id": "CROPIE_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bioanalysis Ring",
+      "category": "ACCESSORY",
+      "soulbound": "SOLO",
+      "tier": "UNCOMMON",
+      "id": "BIOANALYSIS_RING"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/uncategorized/moonlight_crystal",
+      "name": "Moonlight Crystal",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "npc_sell_price": 1500000,
+      "id": "MOONLIGHT_CRYSTAL"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Copper Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "COPPER_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Copper Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "COPPER_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Copper Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "id": "COPPER_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bioanalysis Talisman",
+      "category": "ACCESSORY",
+      "soulbound": "SOLO",
+      "tier": "COMMON",
+      "id": "BIOANALYSIS_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bioanalysis Artifact",
+      "category": "ACCESSORY",
+      "soulbound": "SOLO",
+      "tier": "RARE",
+      "id": "BIOANALYSIS_ARTIFACT"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/uncategorized/sunshine_crystal",
+      "name": "Sunshine Crystal",
+      "tier": "EPIC",
+      "category": "ACCESSORY",
+      "npc_sell_price": 1500000,
+      "id": "SUNSHINE_CRYSTAL"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Atmospheric Filter",
+      "tier": "RARE",
+      "category": "ACCESSORY",
+      "npc_sell_price": 100000,
+      "has_uuid": true,
+      "id": "ATMOSPHERIC_FILTER"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Helianthus Relic",
+      "tier": "EPIC",
+      "category": "ACCESSORY",
+      "stats": {
+        "farming_fortune": 40
+      },
+      "id": "HELIANTHUS_RELIC"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Jake's Plushie",
+      "tier": "UNCOMMON",
+      "soulbound": "SOLO",
+      "category": "ACCESSORY",
+      "stats": {
+        "HEALTH": 2
+      },
+      "id": "JAKE_PLUSHIE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Fermento Artifact",
+      "tier": "RARE",
+      "category": "ACCESSORY",
+      "stats": {
+        "wheat_fortune": 30,
+        "carrot_fortune": 30,
+        "potato_fortune": 30,
+        "melon_fortune": 30,
+        "pumpkin_fortune": 30,
+        "cocoa_beans_fortune": 30,
+        "sugar_cane_fortune": 30,
+        "cactus_fortune": 30,
+        "mushroom_fortune": 30,
+        "nether_stalk_fortune": 30
+      },
+      "id": "FERMENTO_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Elite Voter's Badge",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "COOP",
+      "can_auction": false,
+      "can_trade": false,
+      "can_recombobulate": false,
+      "npc_sell_price": 3000,
+      "id": "VOTER_BADGE_ELITE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Voter's Badge",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "soulbound": "COOP",
+      "can_auction": false,
+      "can_trade": false,
+      "can_recombobulate": false,
+      "npc_sell_price": 1000,
+      "id": "VOTER_BADGE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Supreme Voter's Badge",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "COOP",
+      "can_auction": false,
+      "can_trade": false,
+      "can_recombobulate": false,
+      "npc_sell_price": 5000,
+      "id": "VOTER_BADGE_SUPREME"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "VIP Voter's Badge",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "soulbound": "COOP",
+      "can_auction": false,
+      "can_trade": false,
+      "can_recombobulate": false,
+      "npc_sell_price": 2000,
+      "id": "VOTER_BADGE_VIP"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Blue Gift Talisman",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "BLUE_GIFT_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Purple Gift Talisman",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "id": "PURPLE_GIFT_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Gold Gift Talisman",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "id": "GOLD_GIFT_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "White Gift Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "id": "WHITE_GIFT_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Green Gift Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "GREEN_GIFT_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Glacial Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "ICE",
+          "amount": 15
+        }
+      ],
+      "id": "GLACIAL_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Glacial Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "ICE",
+          "amount": 15
+        }
+      ],
+      "id": "GLACIAL_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Glacial Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "ICE",
+          "amount": 15
+        }
+      ],
+      "id": "GLACIAL_TALISMAN"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/foraging_3/accessories/lumberjack/lumberjack_ring",
+      "name": "Lumberjack Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "LUMBERJACK_RING"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/foraging_3/accessories/lumberjack/lumberjack_talisman",
+      "name": "Lumberjack Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "id": "LUMBERJACK_TALISMAN"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/foraging_3/accessories/lumberjack/lumberjack_artifact",
+      "name": "Lumberjack Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "LUMBERJACK_ARTIFACT"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/foraging_3/accessories/accelerative/accelerative_ring",
+      "name": "Accretion Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "ACCRETION_RING"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/foraging_3/accessories/accelerative/accelerative_talisman",
+      "name": "Accretion Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "id": "ACCRETION_TALISMAN"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/foraging_3/accessories/accelerative/accelerative_artifact",
+      "name": "Accretion Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "ACCRETION_ARTIFACT"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/foraging_3/accessories/honey/honeycomb_talisman",
+      "name": "Honeycomb Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "id": "HONEYCOMB_TALISMAN"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/foraging_3/accessories/honey/honeycomb_artifact",
+      "name": "Honeycomb Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "HONEYCOMB_ARTIFACT"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/foraging_3/accessories/honey/honeycomb_ring",
+      "name": "Honeycomb Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "HONEYCOMB_RING"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/foraging_3/accessories/torrhus/torrhus_talisman",
+      "name": "Torrhus Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "npc_sell_price": 10000,
+      "stats": {
+        "helix_fortune": 5
+      },
+      "id": "TORRHUS_TALISMAN"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/foraging_3/accessories/torrhus/torrhus_ring",
+      "name": "Torrhus Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 20000,
+      "stats": {
+        "helix_fortune": 10
+      },
+      "id": "TORRHUS_RING"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/foraging_3/accessories/torrhus/torrhus_artifact",
+      "name": "Torrhus Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 30000,
+      "stats": {
+        "helix_fortune": 15
+      },
+      "id": "TORRHUS_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "category": "ACCESSORY",
+      "name": "Future Calories Talisman",
+      "tier": "COMMON",
+      "rift_transferrable": true,
+      "unstackable": true,
+      "stats": {
+        "tracking": 0.5,
+        "rift_time": 21
+      },
+      "id": "FUTURE_CALORIES"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Rift Prism",
+      "tier": "RARE",
+      "category": "ACCESSORY",
+      "rift_transferrable": true,
+      "origin": "RIFT",
+      "can_recombobulate": false,
+      "id": "RIFT_PRISM"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Punchcard Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "origin": "RIFT",
+      "stats": {
+        "rift_time": 30
+      },
+      "item_specific": {
+        "regained_rift_time": 25
+      },
+      "id": "PUNCHCARD_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Warding Trinket",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "origin": "RIFT",
+      "stats": {
+        "RIFT_TIME": 40,
+        "rift_intelligence": 5
+      },
+      "id": "WARDING_TRINKET"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Harmonious Surgery Toolkit",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "origin": "RIFT",
+      "stats": {
+        "rift_walk_speed": 2,
+        "rift_time": 10
+      },
+      "id": "HARMONIOUS_SURGERY_TOOLKIT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Celestial Starstone",
+      "tier": "SUPREME",
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "stats": {
+        "rift_time": 130,
+        "rift_intelligence": 20,
+        "rift_walk_speed": 3
+      },
+      "id": "CRUX_TALISMAN_7"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Crux Relic",
+      "tier": "EPIC",
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "stats": {
+        "rift_time": 55,
+        "rift_intelligence": 7
+      },
+      "id": "CRUX_TALISMAN_4"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Crux Artifact",
+      "tier": "RARE",
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "stats": {
+        "rift_time": 35,
+        "rift_intelligence": 5
+      },
+      "id": "CRUX_TALISMAN_3"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Crux Ring",
+      "tier": "UNCOMMON",
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "stats": {
+        "rift_time": 20,
+        "rift_intelligence": 2
+      },
+      "id": "CRUX_TALISMAN_2"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Crux Heirloom",
+      "tier": "LEGENDARY",
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "stats": {
+        "rift_time": 70,
+        "rift_intelligence": 10,
+        "rift_walk_speed": 1
+      },
+      "id": "CRUX_TALISMAN_5"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Crux Talisman",
+      "tier": "COMMON",
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "stats": {
+        "rift_time": 10
+      },
+      "id": "CRUX_TALISMAN_1"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Crux Chronomicon",
+      "tier": "MYTHIC",
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "stats": {
+        "rift_time": 100,
+        "rift_intelligence": 15,
+        "rift_walk_speed": 2
+      },
+      "id": "CRUX_TALISMAN_6"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "rift_transferrable": true,
+      "name": "IQ Point",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "origin": "RIFT",
+      "soulbound": "SOLO",
+      "motes_sell_price": 100,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "IQ_POINT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Ring of Broken Love",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "origin": "RIFT",
+      "stats": {
+        "RIFT_TIME": 80
+      },
+      "description": "This time around, fate really got in the way of love.",
+      "id": "RING_OF_BROKEN_LOVE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Ring of Eternal Love",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "origin": "RIFT",
+      "stats": {
+        "rift_time": 80
+      },
+      "description": "Ramero and Joliet's love transcends the boundaries of time, space, and fate itself.",
+      "id": "RING_OF_ETERNAL_LOVE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "rift_transferrable": true,
+      "name": "2 IQ Points",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "origin": "RIFT",
+      "soulbound": "SOLO",
+      "motes_sell_price": 450,
+      "id": "TWO_IQ_POINT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Argofay Trinket",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "origin": "RIFT",
+      "stats": {
+        "RIFT_INTELLIGENCE": 2
+      },
+      "id": "ARGOFAY_TRINKET"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Defective Monitor",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "origin": "RIFT",
+      "stats": {
+        "RIFT_INTELLIGENCE": 6,
+        "RIFT_TIME": 60
+      },
+      "description": "Obtained from a Kloon who doesn't seem too stable.",
+      "id": "DEFECTIVE_MONITOR"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bluertooth Ring",
+      "tier": "EPIC",
+      "category": "ACCESSORY",
+      "stats": {
+        "intelligence": -2,
+        "walk_speed": -3
+      },
+      "description": "%%dark_gray%%%%italic%%Though it may not be bluer visually, it is in spirit.",
+      "id": "BLUERTOOTH_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Bluetooth Ring",
+      "tier": "RARE",
+      "category": "ACCESSORY",
+      "rift_transferrable": true,
+      "origin": "RIFT",
+      "stats": {
+        "rift_time": 30,
+        "intelligence": -1,
+        "walk_speed": -2
+      },
+      "id": "BLUETOOTH_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Lush Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "health": 3
+      },
+      "id": "LUSH_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Lush Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "stats": {
+        "health": 5,
+        "health_regeneration": 1
+      },
+      "id": "LUSH_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Lush Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "health": 1
+      },
+      "id": "LUSH_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Agarimoo Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "stats": {
+        "fishing_speed": 1
+      },
+      "id": "AGARIMOO_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Agarimoo Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "fishing_wisdom": 1,
+        "fishing_speed": 2
+      },
+      "id": "AGARIMOO_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Agarimoo Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "fishing_wisdom": 1,
+        "farming_wisdom": 1,
+        "fishing_speed": 3
+      },
+      "id": "AGARIMOO_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Hocus-Pocus Cipher",
+      "tier": "EPIC",
+      "category": "ACCESSORY",
+      "unstackable": true,
+      "rift_transferrable": true,
+      "item_specific": {
+        "stats_on_rift": {
+          "rift_time": 65,
+          "rift_intelligence": 5,
+          "rift_mana_regen": 5
+        }
+      },
+      "id": "HOCUS_POCUS_CIPHER"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Satelite",
+      "tier": "LEGENDARY",
+      "motes_sell_price": 37800,
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "id": "SATELITE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Combo Mania",
+      "tier": "UNCOMMON",
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "id": "COMBO_MANIA_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Tiny Dancer",
+      "tier": "UNCOMMON",
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "soulbound": "SOLO",
+      "rift_transferrable": true,
+      "stats": {
+        "CRITICAL_DAMAGE": 1
+      },
+      "id": "TINY_DANCER"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Test Bucket Please Ignore",
+      "tier": "UNCOMMON",
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "soulbound": "SOLO",
+      "rift_transferrable": true,
+      "description": "Was it all a test?",
+      "stats": {
+        "TRUE_DEFENSE": 0.5
+      },
+      "id": "TEST_BUCKET_PLEASE_IGNORE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Big Brain Talisman",
+      "tier": "COMMON",
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "soulbound": "SOLO",
+      "rift_transferrable": true,
+      "stats": {
+        "intelligence": 1
+      },
+      "id": "BIG_BRAIN_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Miniaturized Tubulator",
+      "tier": "UNCOMMON",
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "soulbound": "SOLO",
+      "rift_transferrable": true,
+      "description": "Don't hate the player, hate the game. - Ice T",
+      "stats": {
+        "HEALTH": 1
+      },
+      "id": "MINIATURIZED_TUBULATOR"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Perma-Jelled Garlic-Flavored Re-Heated Gummy Polar Bear",
+      "tier": "EPIC",
+      "motes_sell_price": 4000,
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "item_specific": {
+        "combat_wisdom_vs_vampires": 5
+      },
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "vampire",
+          "level": 3
+        }
+      ],
+      "id": "GARLIC_FLAVORED_GUMMY_BEAR"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Blood Donor Ring",
+      "tier": "UNCOMMON",
+      "category": "ACCESSORY",
+      "npc_sell_price": 2000,
+      "description": "There's like 5 liters in you.",
+      "rift_transferrable": true,
+      "origin": "RIFT",
+      "stats": {
+        "health_regeneration": 2,
+        "rift_time": 10,
+        "rift_mana_regen": 5
+      },
+      "id": "BLOOD_DONOR_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Blood Donor Artifact",
+      "tier": "RARE",
+      "category": "ACCESSORY",
+      "npc_sell_price": 10000,
+      "description": "The human body produces 2-3 million red blood cells per SECOND.",
+      "rift_transferrable": true,
+      "origin": "RIFT",
+      "stats": {
+        "health_regeneration": 3,
+        "rift_time": 15,
+        "rift_mana_regen": 10
+      },
+      "id": "BLOOD_DONOR_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Blood Donor Talisman",
+      "tier": "COMMON",
+      "category": "ACCESSORY",
+      "npc_sell_price": 800,
+      "description": "Do your part bro.",
+      "rift_transferrable": true,
+      "origin": "RIFT",
+      "stats": {
+        "health_regeneration": 1,
+        "rift_time": 5
+      },
+      "id": "BLOOD_DONOR_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Vampire Dentist Relic",
+      "tier": "LEGENDARY",
+      "category": "ACCESSORY",
+      "origin": "RIFT",
+      "npc_sell_price": 80000,
+      "rift_transferrable": true,
+      "stats": {
+        "health_regeneration": 5,
+        "vitality": 1,
+        "rift_time": 30,
+        "rift_health": 1
+      },
+      "item_specific": {
+        "cooldown_seconds": 20,
+        "bonus_heal": 1
+      },
+      "requirements": [
+        {
+          "type": "SLAYER",
+          "slayer_boss_type": "vampire",
+          "level": 5
+        }
+      ],
+      "id": "VAMPIRE_DENTIST_RELIC"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Organ Donor Talisman",
+      "tier": "COMMON",
+      "category": "ACCESSORY",
+      "npc_sell_price": 800,
+      "description": "%%dark_gray%%%%italic%%It's an opt-out system, after all.",
+      "stats": {
+        "cold_resistance": 0.5
+      },
+      "soulbound": "SOLO",
+      "id": "ORGAN_DONOR_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Organ Donor Ring",
+      "tier": "UNCOMMON",
+      "category": "ACCESSORY",
+      "npc_sell_price": 2000,
+      "description": "%%dark_gray%%%%italic%%It's an opt-out system, after all.",
+      "stats": {
+        "cold_resistance": 1
+      },
+      "soulbound": "SOLO",
+      "id": "ORGAN_DONOR_RING"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/mining_3/accessories/powder_of_the_few",
+      "name": "Powder of the Few",
+      "item_specific": {
+        "powders": [
+          "MITHRIL",
+          "GEMSTONE"
+        ],
+        "bonus": 5
+      },
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "components": [
+        {
+          "type": "FORGE_RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "POWDER_OF_THE_FEW"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/mining_3/accessories/powder_of_the_many",
+      "name": "Powder of the Many",
+      "item_specific": {
+        "powders": [
+          "MITHRIL",
+          "GEMSTONE",
+          "GLACITE"
+        ],
+        "bonus": 7.5
+      },
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "id": "POWDER_OF_THE_MANY"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Organ Donor Artifact",
+      "tier": "RARE",
+      "category": "ACCESSORY",
+      "npc_sell_price": 10000,
+      "description": "%%dark_gray%%%%italic%%It's an opt-out system, after all.",
+      "stats": {
+        "cold_resistance": 1.5
+      },
+      "soulbound": "SOLO",
+      "id": "ORGAN_DONOR_ARTIFACT"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/mining_3/accessories/powder_of_the_people",
+      "name": "Powder of the People",
+      "item_specific": {
+        "powders": [
+          "MITHRIL",
+          "GEMSTONE",
+          "GLACITE"
+        ],
+        "bonus": 10
+      },
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "id": "POWDER_OF_THE_PEOPLE"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/mining_3/accessories/powder_of_one",
+      "name": "Powder of One",
+      "item_specific": {
+        "powders": [
+          "MITHRIL"
+        ],
+        "bonus": 2.5
+      },
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "components": [
+        {
+          "type": "FORGE_RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "POWDER_OF_ONE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Draconic Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "stats": {
+        "health": 3
+      },
+      "id": "DRACONIC_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Draconic Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "stats": {
+        "health": 2
+      },
+      "id": "DRACONIC_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Ender Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "id": "ENDER_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Draconic Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "health": 1
+      },
+      "id": "DRACONIC_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Respiration Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 3000,
+      "rift_transferrable": true,
+      "stats": {
+        "respiration": 15
+      },
+      "id": "RESPIRATION_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Respiration Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 2000,
+      "rift_transferrable": true,
+      "stats": {
+        "respiration": 10
+      },
+      "id": "RESPIRATION_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Respiration Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "npc_sell_price": 1000,
+      "rift_transferrable": true,
+      "stats": {
+        "respiration": 5
+      },
+      "id": "RESPIRATION_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Moonglade Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 3000,
+      "stats": {
+        "fig_fortune": 15,
+        "mangrove_fortune": 15
+      },
+      "id": "MOONGLADE_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Moonglade Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "npc_sell_price": 1000,
+      "stats": {
+        "fig_fortune": 5,
+        "mangrove_fortune": 5
+      },
+      "id": "MOONGLADE_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Moonglade Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 2000,
+      "stats": {
+        "fig_fortune": 10,
+        "mangrove_fortune": 10
+      },
+      "id": "MOONGLADE_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Emperor's Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "npc_sell_price": 8100,
+      "id": "EMPEROR_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Emperor's Ring",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 900,
+      "id": "EMPEROR_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Emperor's Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 100,
+      "id": "EMPEROR_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Pressure Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 1000,
+      "stats": {
+        "pressure_resistance": 30
+      },
+      "id": "PRESSURE_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Pressure Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "npc_sell_price": 1000,
+      "stats": {
+        "pressure_resistance": 10
+      },
+      "id": "PRESSURE_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Pressure Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 1000,
+      "stats": {
+        "pressure_resistance": 20
+      },
+      "id": "PRESSURE_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Runeblade Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 900,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "RUNEBLADE_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Runeblade Talisman",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "npc_sell_price": 100,
+      "components": [
+        {
+          "type": "RECIPE_INGREDIENT"
+        }
+      ],
+      "id": "RUNEBLADE_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Runeblade Artifact",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 8100,
+      "id": "RUNEBLADE_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Initiate Badge III",
+      "category": "ACCESSORY",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_3"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire God Badge VIII",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "mending": 9
+      },
+      "id": "SOUL_CAMPFIRE_TALISMAN_28"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Scion Badge VIII",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_20"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Adept Badge I",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_4"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire God Badge III",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "mending": 4
+      },
+      "id": "SOUL_CAMPFIRE_TALISMAN_23"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Scion Badge III",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_15"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire God Badge IV",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "mending": 5
+      },
+      "id": "SOUL_CAMPFIRE_TALISMAN_24"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Cultist Badge IV",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_11"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Scion Badge IV",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_16"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Adept Badge III",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_6"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire God Badge IX",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "mending": 10
+      },
+      "id": "SOUL_CAMPFIRE_TALISMAN_29"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Cultist Badge V",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_12"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Initiate Badge I",
+      "category": "ACCESSORY",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_1"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Cultist Badge III",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_10"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Initiate Badge II",
+      "category": "ACCESSORY",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_2"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Scion Badge V",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_17"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Scion Badge II",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_14"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Scion Badge I",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_13"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Adept Badge IV",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_7"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Scion Badge VI",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_18"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire God Badge VII",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "mending": 8
+      },
+      "id": "SOUL_CAMPFIRE_TALISMAN_27"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire God Badge I",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "mending": 2
+      },
+      "id": "SOUL_CAMPFIRE_TALISMAN_21"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Scion Badge VII",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_19"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire God Badge V",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "mending": 6
+      },
+      "id": "SOUL_CAMPFIRE_TALISMAN_25"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire God Badge VI",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "mending": 7
+      },
+      "id": "SOUL_CAMPFIRE_TALISMAN_26"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire God Badge II",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "mending": 3
+      },
+      "id": "SOUL_CAMPFIRE_TALISMAN_22"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Cultist Badge I",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_8"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Adept Badge II",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_5"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Soul Campfire Cultist Badge II",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "id": "SOUL_CAMPFIRE_TALISMAN_9"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Large Fish Bowl",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "npc_sell_price": 1000,
+      "id": "LARGE_FISH_BOWL"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Medium Fish Bowl",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 500,
+      "id": "MEDIUM_FISH_BOWL"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Small Fish Bowl",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "npc_sell_price": 100,
+      "id": "SMALL_FISH_BOWL"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Chumming Talisman",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "stats": {
+        "fishing_speed": 1,
+        "fishing_wisdom": 1
+      },
+      "description": "Listen, it's for real chums of Moby, ok?",
+      "id": "CHUMMING_TALISMAN"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Trapper Crest",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "id": "TRAPPER_CREST"
+    },
+    {
+      "material": "PAPER",
+      "item_model": "hypixel_skyblock:item/island_relevant/dungeons/infinipot",
+      "name": "InfiniPot™",
+      "tier": "RARE",
+      "unstackable": true,
+      "dungeon_item": true,
+      "category": "ACCESSORY",
+      "id": "INFINIPOT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "General's Medallion",
+      "description": "%%dark_gray%%%%italic%%Once worn proudly, now covered in filth and soot.",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "dungeon_item": true,
+      "id": "GENERAL_MEDALLION"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Pulse Ring",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "npc_sell_price": 8000,
+      "id": "PULSE_RING"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Kuudra Follower Artifact",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "unstackable": true,
+      "soulbound": "SOLO",
+      "id": "KUUDRA_FOLLOWER_ARTIFACT"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Netherrack-Looking Sunshade",
+      "category": "ACCESSORY",
+      "tier": "COMMON",
+      "npc_sell_price": 10000,
+      "salvages": [
+        {
+          "type": "ESSENCE",
+          "essence_type": "CRIMSON",
+          "amount": 15
+        }
+      ],
+      "id": "NETHERRACK_LOOKING_SUNSHADE"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Kuudra's Heart",
+      "tier": "LEGENDARY",
+      "category": "ACCESSORY",
+      "id": "KUUDRAS_HEART"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Kuudra's Lung",
+      "tier": "EPIC",
+      "category": "ACCESSORY",
+      "id": "KUUDRAS_LUNG"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Kuudra's Kidney",
+      "tier": "RARE",
+      "category": "ACCESSORY",
+      "id": "KUUDRAS_KIDNEY"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Rubbish Ring of Love",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "id": "WEDDING_RING_3"
+    },
+    {
+      "material": "GOLD_NUGGET",
+      "name": "§eYellow Rock of Love",
+      "glowing": true,
+      "category": "ACCESSORY",
+      "soulbound": "COOP",
+      "id": "WEDDING_RING_1"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Classy Ring of Love",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "COOP",
+      "id": "WEDDING_RING_6"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Exquisite Ring of Love",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "COOP",
+      "id": "WEDDING_RING_7"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Modest Ring of Love",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "COOP",
+      "id": "WEDDING_RING_4"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Mediocre Ring of Love",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "soulbound": "COOP",
+      "id": "WEDDING_RING_2"
+    },
+    {
+      "material": "GOLD_NUGGET",
+      "name": "§eShiny Yellow Rock",
+      "glowing": true,
+      "category": "ACCESSORY",
+      "soulbound": "COOP",
+      "id": "WEDDING_RING_0"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Invaluable Ring of Love",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "COOP",
+      "id": "WEDDING_RING_8"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Refined Ring of Love",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "COOP",
+      "id": "WEDDING_RING_5"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Legendary Ring of Love",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "COOP",
+      "id": "WEDDING_RING_9"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Cultist Badge I",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_8"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Cultist Badge IV",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_11"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Cultist Badge II",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_9"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire God Badge III",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "health_regeneration": 2
+      },
+      "id": "CAMPFIRE_TALISMAN_23"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire God Badge VI",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "health_regeneration": 3.5
+      },
+      "id": "CAMPFIRE_TALISMAN_26"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Adept Badge II",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_5"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire God Badge I",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "health_regeneration": 1
+      },
+      "id": "CAMPFIRE_TALISMAN_21"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Adept Badge III",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_6"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Cultist Badge III",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_10"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Scion Badge I",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_13"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Initiate Badge I",
+      "category": "ACCESSORY",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_1"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire God Badge IX",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "health_regeneration": 5
+      },
+      "id": "CAMPFIRE_TALISMAN_29"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire God Badge VIII",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "health_regeneration": 4.5
+      },
+      "id": "CAMPFIRE_TALISMAN_28"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire God Badge V",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "health_regeneration": 3
+      },
+      "id": "CAMPFIRE_TALISMAN_25"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Scion Badge II",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_14"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Scion Badge VII",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_19"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Scion Badge III",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_15"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Initiate Badge II",
+      "category": "ACCESSORY",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_2"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Scion Badge VI",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_18"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire God Badge IV",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "health_regeneration": 2.5
+      },
+      "id": "CAMPFIRE_TALISMAN_24"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire God Badge VII",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "health_regeneration": 4
+      },
+      "id": "CAMPFIRE_TALISMAN_27"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Adept Badge I",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_4"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Adept Badge IV",
+      "category": "ACCESSORY",
+      "tier": "UNCOMMON",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_7"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Scion Badge IV",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_16"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Initiate Badge III",
+      "category": "ACCESSORY",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_3"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Scion Badge VIII",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "stats": {
+        "health_regeneration": 0.5
+      },
+      "id": "CAMPFIRE_TALISMAN_20"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Scion Badge V",
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_17"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire God Badge II",
+      "category": "ACCESSORY",
+      "tier": "LEGENDARY",
+      "soulbound": "SOLO",
+      "stats": {
+        "health_regeneration": 1.5
+      },
+      "id": "CAMPFIRE_TALISMAN_22"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Campfire Cultist Badge V",
+      "category": "ACCESSORY",
+      "tier": "RARE",
+      "soulbound": "SOLO",
+      "id": "CAMPFIRE_TALISMAN_12"
+    },
+    {
+      "material": "STRING",
+      "name": "Melody's Hair",
+      "glowing": true,
+      "category": "ACCESSORY",
+      "tier": "EPIC",
+      "stats": {
+        "INTELLIGENCE": 6
+      },
+      "soulbound": "SOLO",
+      "requirements": [
+        {
+          "type": "MELODY_HAIR"
+        }
+      ],
+      "can_auction": false,
+      "id": "MELODY_HAIR"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Magic 8 Ball",
+      "tier": "EPIC",
+      "category": "ACCESSORY",
+      "id": "MAGIC_8_BALL"
+    }
+  ]
+}

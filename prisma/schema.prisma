@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "postgresql"
+  url = env("DATABASE_URL")
+}
+model CacheEntry {
+  key String @id
+  payload Json
+  updatedAt DateTime
+  expiresAt DateTime
+}
+model ItemMetadata {
+  id String @id
+  payload Json
+  updatedAt DateTime @default(now())
+}
+model PriceSnapshot {
+  key String @id
+  payload Json
+  updatedAt DateTime
+}
