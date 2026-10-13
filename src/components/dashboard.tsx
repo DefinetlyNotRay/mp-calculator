@@ -644,16 +644,13 @@ function Workspace() {
                     <label>
                       Target Magical Power
                       <div className="input-unit">
-                        <input
-                          type="number"
-                          min="0"
-                          max="10000"
+                        <CommaInput
                           value={settings.target}
-                          onChange={(e) =>
+                          onValue={(value) =>
                             store.setSettings({
                               target: Math.min(
                                 10000,
-                                Math.max(0, Number(e.target.value)),
+                                Math.max(0, Number(value)),
                               ),
                             })
                           }
@@ -664,13 +661,11 @@ function Workspace() {
                     <label>
                       Coin budget
                       <div className="input-unit">
-                        <input
-                          type="number"
-                          min="0"
+                        <CommaInput
                           value={settings.budget}
-                          onChange={(e) =>
+                          onValue={(value) =>
                             store.setSettings({
-                              budget: Math.max(0, Number(e.target.value)),
+                              budget: Math.max(0, Number(value)),
                             })
                           }
                         />
@@ -1577,12 +1572,11 @@ function Workspace() {
                   <option value="price">Lowest price</option>
                   <option value="efficiency">Coins / MP</option>
                 </select>
-                <input
-                  type="number"
+                <CommaInput
                   aria-label="Maximum price"
                   placeholder="Max price"
                   value={maxPrice}
-                  onChange={(e) => setMaxPrice(e.target.value)}
+                  onValue={setMaxPrice}
                 />
               </div>
               <div className="table-scroll">
@@ -1631,19 +1625,17 @@ function Workspace() {
                             : "Unpriced"}
                         </td>
                         <td>
-                          <input
+                          <CommaInput
                             className="price-input"
                             aria-label={`Manual price for ${item.name}`}
-                            type="number"
-                            min="0"
                             placeholder="Override coins"
                             value={manual[item.id] ?? ""}
-                            onChange={(e) =>
+                            onValue={(value) =>
                               store.setManual(
                                 item.id,
-                                e.target.value === ""
+                                value === ""
                                   ? undefined
-                                  : Math.max(0, Number(e.target.value)),
+                                  : Math.max(0, Number(value)),
                               )
                             }
                           />
@@ -1754,13 +1746,11 @@ function Workspace() {
                 </label>
                 <label>
                   Default coins per batch
-                  <input
-                    type="number"
-                    min="0"
+                  <CommaInput
                     value={settings.slotCost}
-                    onChange={(e) =>
+                    onValue={(value) =>
                       store.setSettings({
-                        slotCost: Math.max(0, Number(e.target.value)),
+                        slotCost: Math.max(0, Number(value)),
                       })
                     }
                   />
@@ -1818,13 +1808,11 @@ function Workspace() {
                 </label>
                 <label>
                   Extra fee per recombobulation
-                  <input
-                    type="number"
-                    min="0"
+                  <CommaInput
                     value={settings.recombFee}
-                    onChange={(e) =>
+                    onValue={(value) =>
                       store.setSettings({
-                        recombFee: Math.max(0, Number(e.target.value)),
+                        recombFee: Math.max(0, Number(value)),
                       })
                     }
                   />
@@ -1999,6 +1987,37 @@ function Stat({
     </div>
   );
 }
+function CommaInput({
+  value,
+  onValue,
+  ...props
+}: {
+  value: number | string;
+  onValue: (value: string) => void;
+  className?: string;
+  placeholder?: string;
+  "aria-label"?: string;
+}) {
+  const formatted =
+    value === ""
+      ? ""
+      : Number(value).toLocaleString("en-US", {
+          maximumFractionDigits: 0,
+        });
+  return (
+    <input
+      {...props}
+      type="text"
+      inputMode="numeric"
+      value={formatted}
+      onChange={(event) => {
+        const raw = event.target.value.replaceAll(",", "").trim();
+        if (/^\d*$/.test(raw)) onValue(raw);
+      }}
+    />
+  );
+}
+
 function Toggle({
   label,
   checked,
@@ -2076,12 +2095,10 @@ function ManualCalculator({ free }: { free: number }) {
           </div>
           <label className="full-label">
             Total upgrade cost (coins)
-            <input
-              type="number"
-              min="0"
+            <CommaInput
               value={upgrade}
               placeholder="Enter your upgrade estimate"
-              onChange={(e) => setUpgrade(e.target.value)}
+              onValue={setUpgrade}
             />
           </label>
           <div className="calculator-result">
