@@ -42,15 +42,17 @@ export async function getItems() {
     const items = makeCatalog(parsed.items);
     const db = prisma;
     if (db)
-      await db.$transaction(
-        items.map((i) =>
-          db.itemMetadata.upsert({
-            where: { id: i.id },
-            create: { id: i.id, payload: JSON.parse(JSON.stringify(i)) },
-            update: { payload: JSON.parse(JSON.stringify(i)) },
-          }),
-        ),
-      );
+      await db
+        .$transaction(
+          items.map((i) =>
+            db.itemMetadata.upsert({
+              where: { id: i.id },
+              create: { id: i.id, payload: JSON.parse(JSON.stringify(i)) },
+              update: { payload: JSON.parse(JSON.stringify(i)) },
+            }),
+          ),
+        )
+        .catch(() => undefined);
     return items;
   });
 }
@@ -124,18 +126,20 @@ export async function ingestAuctions(): Promise<{
     }),
   );
   if (prisma)
-    await prisma.priceSnapshot.upsert({
-      where: { key: "lowest-bin" },
-      create: {
-        key: "lowest-bin",
-        payload: JSON.parse(JSON.stringify(offers)),
-        updatedAt: new Date(first.lastUpdated),
-      },
-      update: {
-        payload: JSON.parse(JSON.stringify(offers)),
-        updatedAt: new Date(first.lastUpdated),
-      },
-    });
+    await prisma.priceSnapshot
+      .upsert({
+        where: { key: "lowest-bin" },
+        create: {
+          key: "lowest-bin",
+          payload: JSON.parse(JSON.stringify(offers)),
+          updatedAt: new Date(first.lastUpdated),
+        },
+        update: {
+          payload: JSON.parse(JSON.stringify(offers)),
+          updatedAt: new Date(first.lastUpdated),
+        },
+      })
+      .catch(() => undefined);
   return { offers, lastUpdated: first.lastUpdated, skipped };
 }
 export async function getAuctions() {
