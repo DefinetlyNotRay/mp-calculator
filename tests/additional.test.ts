@@ -135,6 +135,7 @@ describe("Regression checks", () => {
         capacity: 2,
         slotBatch: 1,
         slotCost: 50,
+        slotSchedule: [],
         keepDuplicates: true,
         recomb: false,
         craft: false,

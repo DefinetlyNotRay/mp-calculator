@@ -216,6 +216,13 @@ function Workspace() {
       api<{
         owned: Owned[];
         capacity: number | null;
+        slotUpgradesPurchased: number | null;
+        slotPricing: {
+          slotBatch: number;
+          slotSchedule: number[];
+          slotCost: number;
+          maxExpansions: number;
+        } | null;
         warnings: string[];
         incomplete: boolean;
         gameMode: string;
@@ -225,6 +232,7 @@ function Workspace() {
       store.setImportStatus(data.incomplete, data.warnings);
       if (data.capacity !== null)
         store.setSettings({ capacity: data.capacity });
+      if (data.slotPricing) store.setSettings(data.slotPricing);
       if (data.gameMode === "ironman" || data.gameMode === "bingo")
         store.setSettings({ auction: false });
       store.setProfile(
@@ -1710,8 +1718,9 @@ function Workspace() {
               </div>
               <h3>Accessory bag expansion</h3>
               <p className="muted">
-                The 12M / 2-slot default is a manual configuration. Confirm your
-                current expansion costs and availability.
+                Jacobus charges 1.5M for upgrade 1, 5M for upgrades 2–5, 8M for
+                6–10, 12M for 11–20, and 20M for 21–99. Profile imports start at
+                your next unpurchased upgrade automatically.
               </p>
               <div className="settings-toggles">
                 <Toggle

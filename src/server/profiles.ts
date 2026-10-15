@@ -7,6 +7,7 @@ import { catalog } from "./catalog";
 import { decodeInventory, identity } from "./nbt";
 import { Owned } from "../lib/models";
 import { currentPower } from "../lib/domain";
+import { jacobusSlotPricing } from "../lib/models";
 const profileSchema = z.object({
   profile_id: z.string(),
   cute_name: z.string().optional(),
@@ -104,6 +105,10 @@ export async function importProfile(uuid: string, profileId: string) {
     typeof tuning?.highest_magical_power === "number"
       ? tuning.highest_magical_power
       : null;
+  const slotUpgradesPurchased =
+    typeof tuning?.bag_upgrades_purchased === "number"
+      ? tuning.bag_upgrades_purchased
+      : null;
   const computed = currentPower(owned, items);
   if (owned.some((o) => items.find((i) => i.id === o.id)?.conditional))
     warnings.push(
@@ -119,6 +124,11 @@ export async function importProfile(uuid: string, profileId: string) {
     capacity,
     currentMP: computed,
     highestRecordedMP: reported,
+    slotUpgradesPurchased,
+    slotPricing:
+      slotUpgradesPurchased === null
+        ? null
+        : jacobusSlotPricing(slotUpgradesPurchased),
     incomplete,
     warnings,
     updatedAt: fetched.updatedAt,

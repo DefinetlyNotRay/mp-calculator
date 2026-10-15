@@ -4,6 +4,7 @@ import { buildOptions, optimize, solve } from "../src/lib/optimizer";
 import { lowestOffer, quoteBook } from "../src/lib/pricing";
 import {
   defaultSettings,
+  jacobusSlotPricing,
   Item,
   Market,
   Offer,
@@ -102,10 +103,10 @@ describe("Magical Power and storage rules", () => {
   });
   it.each([
     [0, 0],
-    [1, 12_000_000],
-    [2, 12_000_000],
-    [3, 24_000_000],
-    [4, 24_000_000],
+    [1, 1_500_000],
+    [2, 1_500_000],
+    [3, 6_500_000],
+    [4, 6_500_000],
   ])("%i new slots costs %i", (slots, cost) =>
     expect(slotExpansion(slots, 0, defaultSettings)?.cost).toBe(cost),
   );
@@ -116,6 +117,16 @@ describe("Magical Power and storage rules", () => {
     expect(
       slotExpansion(3, 0, { ...defaultSettings, maxExpansions: 1 }),
     ).toBeNull();
+  });
+  it("starts imported Jacobus pricing after purchased upgrades", () => {
+    expect(jacobusSlotPricing(0).slotSchedule).toHaveLength(20);
+    expect(jacobusSlotPricing(1).slotSchedule[0]).toBe(5_000_000);
+    expect(jacobusSlotPricing(20)).toEqual({
+      slotBatch: 2,
+      slotSchedule: [],
+      slotCost: 20_000_000,
+      maxExpansions: 79,
+    });
   });
 });
 describe("Market sides and recombobulation", () => {
@@ -218,10 +229,10 @@ describe("State-aware routes", () => {
     ];
     const m = market(items.map((i) => offer(i, 10)));
     const p = best(items, [], m, settings({ capacity: 0, target: 6 }));
-    expect(p.cost).toBe(12_000_020);
+    expect(p.cost).toBe(1_500_020);
     expect(p.slotsUnlocked).toBe(2);
     const q = best(items, [], m, settings({ capacity: 0, target: 9 }));
-    expect(q.cost).toBe(24_000_030);
+    expect(q.cost).toBe(6_500_030);
     expect(q.slotsUnlocked).toBe(4);
     expect(q.steps[0].type).toBe("slots");
   });
@@ -460,7 +471,13 @@ describe("State-aware routes", () => {
       const costs = ids.map(() => 1 + (random() % 40));
       const target = 1 + (random() % 65);
       const capacity = random() % 5;
-      const s = settings({ target, capacity, budget: 1000, slotCost: 15 });
+      const s = settings({
+        target,
+        capacity,
+        budget: 1000,
+        slotCost: 15,
+        slotSchedule: [],
+      });
       let optimal = Infinity,
         final = 0;
       for (let mask = 0; mask < 64; mask++) {

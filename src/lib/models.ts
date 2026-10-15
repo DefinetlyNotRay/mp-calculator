@@ -185,15 +185,27 @@ export const settingsSchema = z.object({
   preferSlots: z.boolean(),
   keepDuplicates: z.boolean().default(false),
 });
+export const jacobusSlotCosts = [
+  1_500_000,
+  ...Array(4).fill(5_000_000),
+  ...Array(5).fill(8_000_000),
+  ...Array(10).fill(12_000_000),
+] as number[];
+export function jacobusSlotPricing(purchased = 0) {
+  const completed = Math.max(0, Math.min(99, Math.floor(purchased)));
+  return {
+    slotBatch: 2,
+    slotSchedule: jacobusSlotCosts.slice(completed),
+    slotCost: 20_000_000,
+    maxExpansions: 99 - completed,
+  };
+}
 export const defaultSettings: Settings = {
   mode: "target",
   target: 100,
   budget: 100_000_000,
   capacity: 30,
-  slotBatch: 2,
-  slotCost: 12_000_000,
-  slotSchedule: [],
-  maxExpansions: 20,
+  ...jacobusSlotPricing(),
   recomb: true,
   craft: true,
   auction: true,
