@@ -399,6 +399,7 @@ export function solve(
   const shared = new Set(
     [...useCounts].filter(([, v]) => v.size > 1).map(([k]) => k),
   );
+  if (s.mode === "target" && shared.size) exact = false;
   const prices = new Map<Option, { resources: Resource[]; fixed: number }>();
   for (const group of groups)
     for (const o of group) {
@@ -414,7 +415,89 @@ export function solve(
       if (sharedCost !== null && totalCost !== null)
         prices.set(o, { resources, fixed: totalCost - sharedCost + fees });
     }
+  const optionCost = (option: Option) => {
+    const price = prices.get(option);
+    if (!price) return Infinity;
+    const quote = quoteResources(price.resources, market, s);
+    return quote === null ? Infinity : price.fixed + quote;
+  };
+  // Families are independent, so processing the cheapest MP first is safe and
+  // gives a capped beam useful complete routes before costly families can fill
+  // it with inferior combinations.
+  groups = [...groups].sort((a, b) => {
+    const score = (group: Option[]) =>
+      Math.min(
+        ...group
+          .filter((option) => option.gain > 0)
+          .map((option) => optionCost(option) / option.gain),
+      );
+    return score(a) - score(b);
+  });
   const needed = Math.max(0, s.target - currentMP);
+  let searchBudget = s.budget;
+  if (s.mode === "target" && needed > 0) {
+    const remaining = new Set(groups.map((_, index) => index));
+    let greedyGain = 0;
+    let greedySlots = 0;
+    let greedyFixed = 0;
+    let greedyResources: Resource[] = [];
+    let greedyCost = 0;
+    while (greedyGain < needed && remaining.size) {
+      let choice:
+        | {
+            group: number;
+            option: Option;
+            slots: number;
+            fixed: number;
+            resources: Resource[];
+            cost: number;
+            score: number;
+          }
+        | undefined;
+      for (const group of remaining)
+        for (const option of groups[group]) {
+          if (option.gain <= 0) continue;
+          const price = prices.get(option);
+          if (!price) continue;
+          const slots = greedySlots + option.slots;
+          const expansion = slotExpansion(slots, free, s);
+          if (!expansion) continue;
+          const resources = consolidate([
+            ...greedyResources,
+            ...price.resources,
+          ]);
+          const quote = quoteResources(resources, market, s);
+          if (quote === null) continue;
+          const fixed = greedyFixed + price.fixed;
+          const cost = fixed + quote + expansion.cost;
+          const usefulGain = Math.min(option.gain, needed - greedyGain);
+          const score = (cost - greedyCost) / Math.max(1, usefulGain);
+          if (
+            !choice ||
+            score < choice.score ||
+            (score === choice.score && cost < choice.cost)
+          )
+            choice = {
+              group,
+              option,
+              slots,
+              fixed,
+              resources,
+              cost,
+              score,
+            };
+        }
+      if (!choice) break;
+      remaining.delete(choice.group);
+      greedyGain += choice.option.gain;
+      greedySlots = choice.slots;
+      greedyFixed = choice.fixed;
+      greedyResources = choice.resources;
+      greedyCost = choice.cost;
+    }
+    if (greedyGain >= needed && greedyCost <= s.budget)
+      searchBudget = greedyCost;
+  }
   for (const group of groups) {
     const next = new Map<string, State>();
     for (const state of states)
@@ -440,12 +523,17 @@ export function solve(
           quote -
           before +
           expansion.cost;
-        if (cost > s.budget) continue;
+        // A feasible greedy route gives target mode a safe upper bound: any
+        // state above it cannot improve the cheapest result.
+        if (cost > searchBudget) continue;
         const usage = resources
           .map((r) => `${r.offerId ?? r.id}:${r.quantity}`)
           .sort()
           .join(",");
-        const key = `${s.mode === "target" ? Math.min(gain, needed) : gain}|${slots}|${usage}`;
+        const key =
+          s.mode === "target"
+            ? `${Math.min(gain, needed)}|${slots}`
+            : `${gain}|${slots}|${usage}`;
         const old = next.get(key);
         if (!old || cost < old.cost || (cost === old.cost && gain > old.gain))
           next.set(key, {
@@ -461,7 +549,21 @@ export function solve(
     if (states.length > s.maxStates) {
       exact = false;
       const needed = Math.max(1, s.target - currentMP);
-      states.sort((a, b) =>
+      if (s.mode === "target") {
+        const compressed = new Map<string, State>();
+        for (const state of states) {
+          const key = `${Math.min(state.gain, needed)}|${state.slots}`;
+          const old = compressed.get(key);
+          if (
+            !old ||
+            state.cost < old.cost ||
+            (state.cost === old.cost && state.gain > old.gain)
+          )
+            compressed.set(key, state);
+        }
+        states = [...compressed.values()];
+      }
+      const ranked = [...states].sort((a, b) =>
         s.mode === "budget"
           ? b.gain - a.gain || a.cost - b.cost
           : (a.gain >= needed ? 0 : 1) - (b.gain >= needed ? 0 : 1) ||
@@ -469,15 +571,64 @@ export function solve(
               ? a.cost - b.cost
               : a.cost / Math.max(1, a.gain) - b.cost / Math.max(1, b.gain)),
       );
-      states = states.slice(0, s.maxStates);
+      if (s.mode === "target") {
+        // Preserve slot-count frontiers. Paying for bag expansion looks poor
+        // before later accessory families fill those slots, so a plain
+        // efficiency beam can otherwise discard every expandable route.
+        const cheapestBySlots = new Map<number, State>();
+        const strongestBySlots = new Map<number, State>();
+        for (const state of states) {
+          const cheap = cheapestBySlots.get(state.slots);
+          if (
+            !cheap ||
+            state.cost < cheap.cost ||
+            (state.cost === cheap.cost && state.gain > cheap.gain)
+          )
+            cheapestBySlots.set(state.slots, state);
+          const strong = strongestBySlots.get(state.slots);
+          if (
+            !strong ||
+            state.gain > strong.gain ||
+            (state.gain === strong.gain && state.cost < strong.cost)
+          )
+            strongestBySlots.set(state.slots, state);
+        }
+        const kept = new Set<State>([
+          ...cheapestBySlots.values(),
+          ...strongestBySlots.values(),
+        ]);
+        const reserve = Math.max(1, Math.ceil(s.maxStates * 0.2));
+        const cheapest = [...states]
+          .filter((state) => state.gain > 0)
+          .sort((a, b) => a.cost - b.cost || b.gain - a.gain)
+          .slice(0, reserve);
+        for (const state of cheapest) kept.add(state);
+        if (kept.size > s.maxStates) {
+          states = [...kept]
+            .sort(
+              (a, b) =>
+                (a.gain >= needed ? 0 : 1) - (b.gain >= needed ? 0 : 1) ||
+                a.cost - b.cost ||
+                b.gain - a.gain,
+            )
+            .slice(0, s.maxStates);
+          continue;
+        }
+        for (const state of ranked) {
+          if (kept.size >= s.maxStates) break;
+          kept.add(state);
+        }
+        states = [...kept];
+      } else states = ranked.slice(0, s.maxStates);
     }
   }
+  const affordable = states.filter((x) => x.cost <= s.budget);
   const eligible =
     s.mode === "target"
-      ? states.filter((x) => currentMP + x.gain >= s.target)
-      : states;
+      ? affordable.filter((x) => currentMP + x.gain >= s.target)
+      : affordable;
   const feasible = eligible.length > 0;
-  const sorted = (feasible ? eligible : states).sort((a, b) =>
+  const sorted = (feasible ? eligible : affordable).sort((a, b) =>
     s.preferSlots && feasible
       ? slotExpansion(a.slots, free, s)!.slots -
           slotExpansion(b.slots, free, s)!.slots ||
@@ -598,6 +749,94 @@ export function optimize(
         settings,
         manual,
       );
+      const abicase = [...active.values()].some((owned) =>
+        owned.id.startsWith("ABICASE"),
+      );
+      if (
+        abicase &&
+        settings.activeContacts > 0 &&
+        settings.contactBaseCapacity > 0 &&
+        (settings.contactCosts.length ||
+          Object.keys(settings.contactEstimates ?? {}).length)
+      ) {
+        const estimates = Object.values(settings.contactEstimates ?? {});
+        const costs = (estimates.length ? estimates : settings.contactCosts)
+          .filter(Number.isFinite)
+          .sort((a, b) => a - b)
+          .slice(0, Math.max(0, 80 - settings.activeContacts));
+        const contactOptions: Option[] = [];
+        let acquisitionCost = 0;
+        for (let added = 1; added <= costs.length; added++) {
+          acquisitionCost += costs[added - 1];
+          const gain =
+            Math.floor((settings.activeContacts + added) / 2) -
+            Math.floor(settings.activeContacts / 2);
+          if (gain <= 0) continue;
+          const needed = settings.activeContacts + added;
+          const phones = [
+            {
+              capacity: settings.contactBaseCapacity,
+              cost: 0,
+              name: "current phone",
+            },
+            { capacity: 10, cost: 5_000_000, name: "Abiphone XIII" },
+            { capacity: 11, cost: 25_000_000, name: "Abiphone XIV" },
+            { capacity: 12, cost: 50_000_000, name: "Abiphone Flip" },
+            { capacity: 13, cost: 100_000_000, name: "Abiphone Flip+" },
+          ].filter((phone) => phone.capacity >= settings.contactBaseCapacity);
+          let best:
+            | {
+                cost: number;
+                phone: string;
+                trios: number;
+                resources: Resource[];
+              }
+            | undefined;
+          for (const phone of phones) {
+            const freeCapacity = phone.capacity + settings.contactBonusSlots;
+            const trios = Math.max(0, Math.ceil((needed - freeCapacity) / 3));
+            if (trios > 25) continue;
+            const resources: Resource[] = trios
+              ? [
+                  {
+                    id: "TRIO_CONTACTS_ADDON",
+                    name: "Abiphone Contacts Trio",
+                    quantity: trios,
+                    source: "bazaar",
+                  },
+                ]
+              : [];
+            const trioCost = quoteResources(resources, market, settings);
+            if (trioCost === null) continue;
+            const cost = acquisitionCost + phone.cost + trioCost;
+            if (!best || cost < best.cost)
+              best = { cost, phone: phone.name, trios, resources };
+          }
+          if (!best) continue;
+          contactOptions.push({
+            family: "__ABIPHONE_CONTACTS__",
+            gain,
+            slots: 0,
+            steps: [
+              {
+                itemId: "ABIPHONE_CONTACTS",
+                name: `Add ${added} Abiphone contact${added === 1 ? "" : "s"}`,
+                type: "upgrade",
+                cost: best.cost,
+                gain,
+                resources: best.resources,
+                requirements: [
+                  `Requires capacity for ${needed} contacts`,
+                  `Capacity route: ${best.phone}${best.trios ? ` + ${best.trios} Contacts Trio${best.trios === 1 ? "" : "s"}` : ""}`,
+                ],
+                source: "Profile contacts • manual marginal contact costs",
+                updatedAt: market.bazaarUpdatedAt,
+              },
+            ],
+          });
+        }
+        if (contactOptions.length) built.groups.push(contactOptions);
+      }
       const plan = solve(
         built.groups,
         mp,

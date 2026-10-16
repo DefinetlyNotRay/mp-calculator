@@ -351,6 +351,33 @@ describe("State-aware routes", () => {
     expect(p.cost).toBe(0);
     expect(p.steps[0].type).toBe("equip");
   });
+  it("compares Abiphone contact MP with phone capacity and Contacts Trios", () => {
+    const abicase = item("ABICASE", "RARE");
+    const m = market();
+    m.books.TRIO_CONTACTS_ADDON = {
+      buy_summary: [{ amount: 25, pricePerUnit: 1_000_000 }],
+      sell_summary: [],
+    };
+    const plan = optimize(
+      [abicase],
+      [{ ...own(abicase), mpOverride: 12 }],
+      [],
+      m,
+      settings({
+        mode: "target",
+        target: 13,
+        activeContacts: 8,
+        contactBaseCapacity: 9,
+        contactBonusSlots: 0,
+        contactCosts: [0, 0],
+      }),
+    )[0];
+    expect(plan.feasible).toBe(true);
+    expect(plan.finalMP).toBe(13);
+    expect(plan.cost).toBe(1_000_000);
+    expect(plan.steps[0].name).toBe("Add 2 Abiphone contacts");
+    expect(plan.steps[0].requirements.join(" ")).toContain("Contacts Trio");
+  });
   it("does not assume soulbound resale proceeds", () => {
     const a = item("A", "RARE", "F"),
       b = item("B", "EPIC", "F", 1);
@@ -429,6 +456,46 @@ describe("State-aware routes", () => {
     const p = solve(groups, 0, 0, m, settings({ target: 16 }));
     expect(p.feasible).toBe(false);
     expect(p.gain).toBe(8);
+  });
+  it("does not return a more expensive target route for a larger budget", () => {
+    const fixed = (name: string, gain: number, cost: number): Option => ({
+      family: name,
+      gain,
+      slots: 0,
+      steps: [
+        {
+          itemId: name,
+          name,
+          type: "buy",
+          cost,
+          gain,
+          resources: [],
+          requirements: [],
+          source: "test",
+          updatedAt: Date.now(),
+        },
+      ],
+    });
+    const groups: Option[][] = [
+      [fixed("cheap-start", 5, 9), fixed("budget-decoy", 8, 11)],
+      [fixed("cheap-finish", 5, 1)],
+    ];
+    const low = solve(
+      groups,
+      0,
+      0,
+      market(),
+      settings({ target: 10, budget: 10, maxStates: 2 }),
+    );
+    const high = solve(
+      groups,
+      0,
+      0,
+      market(),
+      settings({ target: 10, budget: 100, maxStates: 2 }),
+    );
+    expect(low.cost).toBe(10);
+    expect(high.cost).toBe(low.cost);
   });
   it("stops circular upgrade paths", () => {
     const a = item("A", "RARE", "F"),

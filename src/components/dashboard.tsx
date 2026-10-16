@@ -45,6 +45,7 @@ import {
   X,
 } from "lucide-react";
 import { Button } from "./ui/button";
+import contactData from "../../data/abiphone-contacts.json";
 import {
   currentPower,
   effectiveCollection,
@@ -81,6 +82,7 @@ type MarketData = {
   stale: boolean;
   warnings: string[];
   prices: Record<string, { price: number; id: string; end: number }>;
+  contactPrices: Record<string, { price: number | null; source: string }>;
 };
 type Result = { plans: Plan[]; limitations: string[] };
 type Profiles = {
@@ -223,6 +225,11 @@ function Workspace() {
           slotCost: number;
           maxExpansions: number;
         } | null;
+        abiphone: {
+          activeContacts: string[];
+          phoneName: string | null;
+          baseCapacity: number;
+        };
         warnings: string[];
         incomplete: boolean;
         gameMode: string;
@@ -233,6 +240,11 @@ function Workspace() {
       if (data.capacity !== null)
         store.setSettings({ capacity: data.capacity });
       if (data.slotPricing) store.setSettings(data.slotPricing);
+      store.setSettings({
+        activeContacts: data.abiphone.activeContacts.length,
+        activeContactIds: data.abiphone.activeContacts,
+        contactBaseCapacity: data.abiphone.baseCapacity,
+      });
       if (data.gameMode === "ironman" || data.gameMode === "bingo")
         store.setSettings({ auction: false });
       store.setProfile(
@@ -1834,6 +1846,108 @@ function Workspace() {
                 the item for you. Any requirement is shown directly on the
                 recommendation step.
               </p>
+              <h3>Abiphone contacts</h3>
+              <p className="muted">
+                Imported: {settings.activeContacts} active contacts · phone base
+                capacity {settings.contactBaseCapacity || "unknown"}. Every two
+                added contacts grant +1 Abicase MP. Phone upgrades and live
+                Contacts Trio prices are included automatically.
+              </p>
+              <div className="manual-fields">
+                <label>
+                  Existing bonus contact slots
+                  <CommaInput
+                    value={settings.contactBonusSlots}
+                    onValue={(value) =>
+                      store.setSettings({
+                        contactBonusSlots: Math.max(0, Number(value)),
+                      })
+                    }
+                  />
+                </label>
+              </div>
+              <p className="muted">
+                Select contacts you can obtain. Enter the value of consumed
+                items, coins, or time you want the optimizer to treat as their
+                cost. Requirements come from the current wiki contact table.
+              </p>
+              <div className="requirements contact-planner">
+                {contactData.contacts.map((contact) => {
+                  const owned = hasContact(
+                    contact.npc,
+                    settings.activeContactIds ?? [],
+                  );
+                  const selected = Object.hasOwn(
+                    settings.contactEstimates ?? {},
+                    contact.npc,
+                  );
+                  return (
+                    <div
+                      className={`contact-row${owned ? " contact-row-owned" : ""}`}
+                      key={contact.npc}
+                    >
+                      <label>
+                        <input
+                          type="checkbox"
+                          checked={owned || selected}
+                          disabled={owned}
+                          onChange={(event) => {
+                            const next = {
+                              ...(settings.contactEstimates ?? {}),
+                            };
+                            if (event.target.checked)
+                              next[contact.npc] =
+                                market.data?.contactPrices?.[contact.npc]
+                                  ?.price ?? 0;
+                            else delete next[contact.npc];
+                            store.setSettings({
+                              contactEstimates: next,
+                              contactCosts: [],
+                            });
+                          }}
+                        />
+                        <span>
+                          <strong>
+                            {contact.npc}
+                            {owned && <em className="owned-label">Owned</em>}
+                          </strong>
+                          <small>{contact.requirement}</small>
+                          <small>
+                            {market.data?.contactPrices?.[contact.npc]
+                              ?.price !== null &&
+                            market.data?.contactPrices?.[contact.npc]?.price !==
+                              undefined
+                              ? `${coins(market.data.contactPrices[contact.npc].price!)} · ${market.data.contactPrices[contact.npc].source}`
+                              : (market.data?.contactPrices?.[contact.npc]
+                                  ?.source ?? "Manual estimate required")}
+                          </small>
+                        </span>
+                      </label>
+                      <CommaInput
+                        aria-label={`Estimated cost for ${contact.npc}`}
+                        placeholder="Estimated coins"
+                        disabled={owned}
+                        value={
+                          owned
+                            ? ""
+                            : selected
+                              ? (settings.contactEstimates ?? {})[contact.npc]
+                              : ""
+                        }
+                        onValue={(value) => {
+                          if (!selected) return;
+                          store.setSettings({
+                            contactEstimates: {
+                              ...(settings.contactEstimates ?? {}),
+                              [contact.npc]: Math.max(0, Number(value)),
+                            },
+                          });
+                        }}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
               <h3>Data coverage</h3>
               <p className="muted">
                 {catalog.data?.coverage.items} accessories ·{" "}
@@ -1996,6 +2110,22 @@ function Stat({
     </div>
   );
 }
+function hasContact(name: string, ids: string[]) {
+  const aliases: Record<string, string[]> = {
+    Elizabeth: ["community_shop"],
+    Jax: ["arrow_forger"],
+    "Jotraeline Greatforge": ["drill_fuel_mechanic"],
+    "Maddox the Slayer": ["slayer"],
+    Mort: ["gatekeeper"],
+    Maxwell: ["thaumaturgist"],
+    "Tia the Fairy": ["fairy"],
+  };
+  const normalized = name.toLowerCase().replaceAll(/[^a-z0-9]+/g, "_");
+  return ids.some(
+    (id) => id === normalized || (aliases[name] ?? []).includes(id),
+  );
+}
+
 function CommaInput({
   value,
   onValue,
@@ -2005,6 +2135,7 @@ function CommaInput({
   onValue: (value: string) => void;
   className?: string;
   placeholder?: string;
+  disabled?: boolean;
   "aria-label"?: string;
 }) {
   const formatted =

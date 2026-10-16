@@ -66,12 +66,39 @@ export async function importProfile(uuid: string, profileId: string) {
   const owned: Owned[] = [];
   const warnings: string[] = [];
   let capacity: number | null = null;
+  let phone: { name: string; capacity: number } | null = null;
   let incomplete = !accessory?.data;
   const load = (data: string, active: boolean) => {
     try {
       const entries = decodeInventory(data);
       if (active) capacity = entries.length;
       for (const entry of entries) {
+        const phoneId = entry.tag?.ExtraAttributes?.id;
+        if (typeof phoneId === "string") {
+          const phones: Record<string, { name: string; capacity: number }> = {
+            ABIPHONE_BASIC: { name: "Abiphone Basic", capacity: 6 },
+            ABIPHONE_X_PLUS: { name: "Abiphone X", capacity: 7 },
+            ABIPHONE_X_PLUS_SPECIAL_EDITION: {
+              name: "Abiphone X",
+              capacity: 7,
+            },
+            ABIPHONE_XI_ULTRA: { name: "Abiphone XI", capacity: 8 },
+            ABIPHONE_XI_ULTRA_STYLE: { name: "Abiphone XI", capacity: 8 },
+            ABIPHONE_XII_MEGA: { name: "Abiphone XII", capacity: 9 },
+            ABIPHONE_XII_MEGA_COLOR: { name: "Abiphone XII", capacity: 9 },
+            ABIPHONE_XIII_PRO: { name: "Abiphone XIII", capacity: 10 },
+            ABIPHONE_XIII_PRO_GIGA: { name: "Abiphone XIII", capacity: 10 },
+            ABIPHONE_XIV_ENORMOUS: { name: "Abiphone XIV", capacity: 11 },
+            ABIPHONE_XIV_ENORMOUS_PURPLE: {
+              name: "Abiphone XIV",
+              capacity: 11,
+            },
+            ABIPHONE_XIV_ENORMOUS_BLACK: { name: "Abiphone XIV", capacity: 11 },
+          };
+          const detected = phones[phoneId];
+          if (detected && (!phone || detected.capacity > phone.capacity))
+            phone = detected;
+        }
         const item = identity(entry, items, active);
         if (item) owned.push(item);
       }
@@ -109,6 +136,12 @@ export async function importProfile(uuid: string, profileId: string) {
     typeof tuning?.bag_upgrades_purchased === "number"
       ? tuning.bag_upgrades_purchased
       : null;
+  const abiphone = ((
+    member.nether_island_player_data as Record<string, unknown> | undefined
+  )?.abiphone ?? {}) as Record<string, unknown>;
+  const activeContacts = Array.isArray(abiphone.active_contacts)
+    ? abiphone.active_contacts.filter((x): x is string => typeof x === "string")
+    : [];
   const computed = currentPower(owned, items);
   if (owned.some((o) => items.find((i) => i.id === o.id)?.conditional))
     warnings.push(
@@ -119,6 +152,7 @@ export async function importProfile(uuid: string, profileId: string) {
       `Computed ${computed} MP; profile highest recorded MP is ${reported}. This is a historical maximum, not a guaranteed current value.`,
     );
   if (fetched.stale) warnings.push("Profile is cached and may be stale.");
+  const detectedPhone = phone as { name: string; capacity: number } | null;
   return {
     owned,
     capacity,
@@ -129,6 +163,11 @@ export async function importProfile(uuid: string, profileId: string) {
       slotUpgradesPurchased === null
         ? null
         : jacobusSlotPricing(slotUpgradesPurchased),
+    abiphone: {
+      activeContacts,
+      phoneName: detectedPhone?.name ?? null,
+      baseCapacity: detectedPhone?.capacity ?? 0,
+    },
     incomplete,
     warnings,
     updatedAt: fetched.updatedAt,

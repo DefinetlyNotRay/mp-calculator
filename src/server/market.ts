@@ -4,7 +4,7 @@ import { cached, ttl, prisma } from "./cache";
 import { hypixel, ApiError } from "./hypixel";
 import { catalog, makeCatalog } from "./catalog";
 import { decodeInventory, identity } from "./nbt";
-import { Book, Market, Offer } from "../lib/models";
+import { Book, Market, Offer, Rarity, rarities } from "../lib/models";
 const row = z.object({
   amount: z.number().nonnegative(),
   pricePerUnit: z.number().nonnegative(),
@@ -91,8 +91,30 @@ export async function ingestAuctions(): Promise<{
       try {
         const entry = decodeInventory(auction.item_bytes)[0];
         if (!entry) continue;
-        const identified = identity(entry, items);
         const extra = entry.tag?.ExtraAttributes;
+        if (extra?.id === "PET" && typeof extra.petInfo === "string") {
+          const pet = JSON.parse(extra.petInfo) as Record<string, unknown>;
+          const type = typeof pet.type === "string" ? pet.type : null;
+          const tier = rarities.includes(pet.tier as Rarity)
+            ? (pet.tier as Rarity)
+            : null;
+          if (type && tier) {
+            const levelOne = Number(pet.exp ?? 0) === 0 ? "_LVL1" : "";
+            const itemId = `PET_${type}_${tier}${levelOne}`;
+            offers.push({
+              id: auction.uuid,
+              itemId,
+              rarity: tier,
+              recomb: false,
+              price: auction.starting_bid,
+              end: auction.end,
+              updatedAt: first.lastUpdated,
+              variant: itemId,
+            });
+          }
+          continue;
+        }
+        const identified = identity(entry, items);
         if (!identified || identified.soulbound) continue;
         // Attribute-bearing and mutable variants are not safely comparable without item rules.
         const item = items.find((i) => i.id === identified.id)!;

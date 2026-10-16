@@ -51,6 +51,21 @@ export const useOptimizerStore = create<State>()(
           collectionWarnings: [],
         }),
     }),
-    { name: "skyblock-optimizer-v1", version: 1 },
+    {
+      name: "skyblock-optimizer-v1",
+      version: 2,
+      migrate: (persisted) => persisted as State,
+      merge: (persisted, current) => {
+        const saved = (persisted ?? {}) as Partial<State>;
+        return {
+          ...current,
+          ...saved,
+          settings: {
+            ...defaultSettings,
+            ...(saved.settings ?? {}),
+          },
+        };
+      },
+    },
   ),
 );

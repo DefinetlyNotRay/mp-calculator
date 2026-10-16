@@ -138,6 +138,12 @@ export interface Settings {
   recombFee: number;
   preferSlots: boolean;
   keepDuplicates: boolean;
+  activeContacts: number;
+  contactBaseCapacity: number;
+  contactBonusSlots: number;
+  contactCosts: number[];
+  activeContactIds: string[];
+  contactEstimates: Record<string, number>;
 }
 export interface Plan {
   name: string;
@@ -184,6 +190,14 @@ export const settingsSchema = z.object({
   recombFee: z.number().min(0).max(1e10),
   preferSlots: z.boolean(),
   keepDuplicates: z.boolean().default(false),
+  activeContacts: z.number().int().min(0).max(100).default(0),
+  contactBaseCapacity: z.number().int().min(0).max(100).default(0),
+  contactBonusSlots: z.number().int().min(0).max(100).default(0),
+  contactCosts: z.array(z.number().min(0).max(1e12)).max(100).default([]),
+  activeContactIds: z.array(z.string().max(100)).max(100).default([]),
+  contactEstimates: z
+    .record(z.string().max(100), z.number().min(0).max(1e12))
+    .default({}),
 });
 export const jacobusSlotCosts = [
   1_500_000,
@@ -218,4 +232,10 @@ export const defaultSettings: Settings = {
   recombFee: 0,
   preferSlots: false,
   keepDuplicates: false,
+  activeContacts: 0,
+  contactBaseCapacity: 0,
+  contactBonusSlots: 0,
+  contactCosts: [],
+  activeContactIds: [],
+  contactEstimates: {},
 };
